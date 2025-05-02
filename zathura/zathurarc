@@ -1,0 +1,7 @@
+include                         ./gruvbox
+set font                        "IosevkaTerm NF 16"
+set scroll-page-aware           "true"
+set recolor                     "true"
+set guioptions                  ""
+set adjust-open                 "best-fit"
+set selection-clipboard			clipboard
