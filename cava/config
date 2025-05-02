@@ -1,0 +1,14 @@
+[smoothing]
+monstercat = 1
+waves = 1
+
+[color]
+gradient = 1
+gradient_count = 7
+gradient_color_1 = '#D3869B'
+gradient_color_2 = '#83A598'
+gradient_color_3 = '#8EC07C'
+gradient_color_4 = '#B8BB26'
+gradient_color_5 = '#FABD2F'
+gradient_color_6 = '#FE8019'
+gradient_color_7 = '#FF5F5F'
