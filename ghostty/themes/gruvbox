@@ -1,0 +1,22 @@
+palette = 0=#1D2021
+palette = 1=#FF5F5F
+palette = 2=#B8BB26
+palette = 3=#FABD2F
+palette = 4=#83A598
+palette = 5=#D3869B
+palette = 6=#8EC07C
+palette = 7=#d4be98
+palette = 8=#1D2021
+palette = 9=#FF5F5F
+palette = 10=#B8BB26
+palette = 11=#FABD2F
+palette = 12=#83A598
+palette = 13=#D3869B
+palette = 14=#8EC07C
+palette = 15=#d4be98
+background = #1D2021
+foreground = #d4be98
+cursor-color = #e79a4e
+selection-invert-fg-bg = true
+# selection-background = #a9b664
+# selection-foreground = #1D2021

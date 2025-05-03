@@ -1,0 +1,33 @@
+font-family = IosevkaTerm NFM
+# font-size = 16
+# font-family = JetBrainsMono NFM
+# font-family = Glass TTY VT220
+# custom-shader = "~/.config/ghostty/shaders/crt.glsl"
+
+window-decoration = none
+window-padding-x = 30
+window-padding-y = 30
+gtk-titlebar = false
+window-theme = ghostty
+theme = gruvbox
+
+keybind = ctrl+a>n=new_window
+keybind = ctrl+a>s>h=new_split:left
+keybind = ctrl+a>s>j=new_split:down
+keybind = ctrl+a>s>k=new_split:up
+keybind = ctrl+a>s>l=new_split:right
+
+keybind = ctrl+a>h=goto_split:left
+keybind = ctrl+a>j=goto_split:down
+keybind = ctrl+a>k=goto_split:up
+keybind = ctrl+a>l=goto_split:right
+
+keybind = ctrl+a>up=resize_split:up,10
+keybind = ctrl+a>down=resize_split:down,10
+keybind = ctrl+a>left=resize_split:left,10
+keybind = ctrl+a>right=resize_split:right,10
+
+keybind = ctrl+a>z=toggle_split_zoom
+keybind = ctrl+a>x=close_surface
+keybind = ctrl+a>n=jump_to_prompt:1
+keybind = ctrl+a>p=jump_to_prompt:1
