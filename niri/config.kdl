@@ -290,6 +290,7 @@ spawn-at-startup "/home/dinesh-24010/Software/swww/target/release/swww-daemon"
 // spawn-at-startup "/home/dinesh-24010/Software/swww/target/release/swww" "img" "/home/dinesh-24010/Pictures/walls/gruvbox/gruvboxAstro.jpg"
 spawn-at-startup "/home/dinesh-24010/Software/eww/target/release/eww" "open" "bar"
 spawn-at-startup "dunst"
+spawn-at-startup "/home/dinesh-24010/Software/xwayland-satellite/target/release/xwayland-satellite"
 // spawn-at-startup "setxkbmap -option 'ctrl:swapcaps'"
 
 // Uncomment this line to ask the clients to omit their client-side decorations if possible.
@@ -356,7 +357,7 @@ window-rule {
 // Example: enable rounded corners for all windows.
 // (This example rule is commented out with a "/-" in front.)
 window-rule {
-    geometry-corner-radius 20
+    geometry-corner-radius 16
     clip-to-geometry true
 }
 
