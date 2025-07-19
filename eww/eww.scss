@@ -3,9 +3,9 @@
 }
 
 .bar {
-  /* opacity: 0.99; */
-  /* border-radius: 20px; */
-  background-color: #1D2021;
+  opacity: 0.99;
+  border-radius: 1.6rem;
+  background-color: rgba($color: #1D2021, $alpha: 0.99);
   color: #EBDBB2;
   font-family: "Iosevka NFM";
 }
