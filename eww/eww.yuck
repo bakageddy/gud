@@ -1,0 +1,61 @@
+(defpoll hours
+	:interval "10s"
+    :initial "initial-value"
+    :run-while time-visible
+	`date +%H`)
+
+(defpoll minutes
+	:interval "10s"
+    :initial "initial-value"
+    :run-while time-visible
+	`date +%M`)
+
+(defwidget time[]
+	(box :orientation "v" :space-evenly false :class "common time" 
+		(box (label :class "time__hours" :text "${hours}"))
+		(box (label :class "time__minutes" :text "${minutes}"))))
+
+(defvar power_reveal false)
+
+(defwidget battery[]
+	(eventbox 
+		:orientation "v"
+		:space-evenly false
+		:class "common battery"
+		:onhover "${EWW_EXECUTABLE} update power_reveal=true"
+		:onhoverlost "${EWW_EXECUTABLE} update power_reveal=false"
+		(box :orientation "v"
+		(revealer :transistion "slidedown" :reveal power_reveal :label "BAT"
+			(label :class "battery__perc" :text "${battery_total}%"))
+		(label :text "BAT"))))
+
+;; (defwidget circular_battery[]
+;; 	(circular-progress :value battery_total :thickness 20.0 :start-at 0 :clockwise true))
+
+(defpoll battery_total :interval "2s" "./scripts/battery.sh")
+
+
+(defwidget top[]
+	(box :valign "end" :orientation "v" :space-evenly false :class "bottom"
+		(button :class "common start" :onclick "fuzzel" "")))
+
+(defwidget bottom[]
+	(box :vexpand "true" :valign "end" :orientation "v" :space-evenly false :class "bottom"
+		;; (battery)
+		(time)))
+
+(defwidget bar[]
+	(box :orientation "v" :space-evenly false :class "bar" 
+		(top)
+		(bottom)))
+
+
+(defwindow bar
+	:monitor '[0, 1]'
+	:geometry (geometry :x "0%"
+					   :y "0%"
+					   :height "100%"
+					   :width "3%"
+					   :anchor "center left")
+	:exclusive true
+	(bar))

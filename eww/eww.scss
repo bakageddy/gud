@@ -1,0 +1,32 @@
+* {
+  all: unset;
+}
+
+.bar {
+  /* opacity: 0.99; */
+  /* border-radius: 20px; */
+  background-color: #1D2021;
+  color: #EBDBB2;
+  font-family: "Iosevka NFM";
+}
+
+.common {
+  font-family: "Iosevka NFM";
+  font-size: 2rem;
+  font-weight: 900;
+  padding: 1rem;
+}
+
+.time {
+  color: #B8BB26;
+}
+
+
+.battery {
+  /* color: #83A598; */
+}
+
+.start {
+  color: #FB4934;
+  font-size: 3.2rem;
+}
