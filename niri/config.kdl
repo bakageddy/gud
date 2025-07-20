@@ -7,6 +7,10 @@
 // Find the full list of options on the wiki:
 // https://github.com/YaLTeR/niri/wiki/Configuration:-Input
 
+environment {
+	DISPLAY ":0"
+}
+
 input {
     keyboard {
         xkb {
@@ -286,12 +290,11 @@ layout {
 // See the binds section below for more spawn examples.
 
 // This line starts waybar, a commonly used bar for Wayland compositors.
+spawn-at-startup "/home/dinesh-24010/Software/xwayland-satellite/target/release/xwayland-satellite"
 spawn-at-startup "/home/dinesh-24010/Software/swww/target/release/swww-daemon"
 // spawn-at-startup "/home/dinesh-24010/Software/swww/target/release/swww" "img" "/home/dinesh-24010/Pictures/walls/gruvbox/gruvboxAstro.jpg"
 spawn-at-startup "/home/dinesh-24010/Software/eww/target/release/eww" "open" "bar"
 spawn-at-startup "dunst"
-spawn-at-startup "/home/dinesh-24010/Software/xwayland-satellite/target/release/xwayland-satellite"
-// spawn-at-startup "setxkbmap -option 'ctrl:swapcaps'"
 
 // Uncomment this line to ask the clients to omit their client-side decorations if possible.
 // If the client will specifically ask for CSD, the request will be honored.
