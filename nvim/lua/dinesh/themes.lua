@@ -60,7 +60,7 @@ M.gruvbox_flat = {
 
 M.gruvbox = {
 	bg       = '#1d2021',
-	fg       = '#ebdbb2',
+	fg       = '#d4be98',
 	yellow   = '#fabd2f',
 	cyan     = '#8ec07c',
 	darkblue = '#83a598',
