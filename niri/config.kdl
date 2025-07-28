@@ -294,6 +294,7 @@ spawn-at-startup "/home/dinesh-24010/Software/xwayland-satellite/target/release/
 spawn-at-startup "/home/dinesh-24010/Software/swww/target/release/swww-daemon"
 // spawn-at-startup "/home/dinesh-24010/Software/swww/target/release/swww" "img" "/home/dinesh-24010/Pictures/walls/gruvbox/gruvboxAstro.jpg"
 spawn-at-startup "/home/dinesh-24010/Software/eww/target/release/eww" "open" "bar"
+spawn-at-startup "foot -s"
 spawn-at-startup "dunst"
 
 // Uncomment this line to ask the clients to omit their client-side decorations if possible.
@@ -380,9 +381,9 @@ binds {
     Mod+Shift+Slash { show-hotkey-overlay; }
 
     // Suggested binds for running programs: terminal, app launcher, screen locker.
-    Mod+Return hotkey-overlay-title="Open a Terminal: ghostty" { spawn "ghostty"; }
+    Mod+Return hotkey-overlay-title="Open a Terminal: foot" { spawn "foot"; }
+    Mod+Shift+Return hotkey-overlay-title="Open a Terminal: ghostty" { spawn "ghostty"; }
     Mod+P hotkey-overlay-title="Run an Application: fuzzel" { spawn "fuzzel"; }
-    // Mod+P hotkey-overlay-title="Run an Application: rofi" { spawn "~/.config/rofi/launchers/type-2/launcher.sh"; }
     Mod+Shift+B hotkey-overlay-title="Run Browser: zen" { spawn "/home/dinesh-24010/Software/zen/zen"; }
     Super+Alt+L hotkey-overlay-title="Lock the Screen: swaylock" { spawn "swaylock"; }
 

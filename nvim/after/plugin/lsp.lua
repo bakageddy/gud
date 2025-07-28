@@ -80,7 +80,7 @@ require("mason-lspconfig").setup({
 	ensure_installed = {
 		"jdtls",
 		"rust_analyzer",
-		"gopls",
+		-- "gopls",
 		"lua_ls",
 	},
 	handlers = {
