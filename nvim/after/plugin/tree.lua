@@ -2,7 +2,7 @@ local neotree = require('neo-tree')
 
 neotree.setup {
 	window = {
-		width = 35,
+		width = 25,
 		height = 15
 	}
 }
