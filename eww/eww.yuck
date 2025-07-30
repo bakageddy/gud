@@ -54,7 +54,7 @@
 	:monitor '[0, 1]'
 	:geometry (geometry :x "0.5%"
 					   :y "0%"
-					   :height "94%"
+					   :height "97%"
 					   :width "2%"
 					   :anchor "center left")
 	:exclusive true
