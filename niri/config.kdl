@@ -124,7 +124,7 @@ output "LG Electronics LG ULTRAGEAR 502NTJJ6N108" {
 	mode "1920x1080@179.961"
 	scale 1
 	position x=1920 y=0
-	// transform "90"
+	transform "90"
 }
 
 // Settings that influence how windows are positioned and sized.
