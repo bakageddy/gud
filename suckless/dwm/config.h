@@ -82,7 +82,8 @@ static const Layout layouts[] = {
 };
 
 /* key definitions */
-#define MODKEY Mod1Mask
+// #define MODKEY Mod1Mask
+#define MODKEY Mod4Mask
 #define TAGKEYS(KEY,TAG) \
 	{ MODKEY,                       KEY,      view,           {.ui = 1 << TAG} }, \
 	{ MODKEY|ControlMask,           KEY,      toggleview,     {.ui = 1 << TAG} }, \
@@ -99,7 +100,7 @@ static const char *altTermCmd[] = { "/bin/sh", "-c", "urxvtc", NULL};
 static const char *yazicmd[] = {"st", "-e", "yazi", NULL};
 static const char *emacscmd[] = {"emacs", "--no-x-resources", NULL};
 static const char *zathuracmd[] = {"zathura", NULL};
-static const char *browsercmd[] = {"firefox", NULL};
+static const char *browsercmd[] = {"/home/dinesh-24010/Software/zen/zen", NULL};
 static const char *increase_vol[] = {"amixer", "set", "Master", "5%+", NULL};
 static const char *decrease_vol[] = {"amixer", "set", "Master", "5%-", NULL};
 static const char *mute[] = {"amixer", "set", "Master", "toggle", NULL};

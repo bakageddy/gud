@@ -294,7 +294,7 @@ spawn-at-startup "/home/dinesh-24010/Software/xwayland-satellite/target/release/
 spawn-at-startup "/home/dinesh-24010/Software/swww/target/release/swww-daemon"
 // spawn-at-startup "/home/dinesh-24010/Software/swww/target/release/swww" "img" "/home/dinesh-24010/Pictures/walls/gruvbox/gruvboxAstro.jpg"
 spawn-at-startup "/home/dinesh-24010/Software/eww/target/release/eww" "open" "bar"
-spawn-at-startup "foot -s"
+spawn-at-startup "foot" "-s"
 spawn-at-startup "dunst"
 
 // Uncomment this line to ask the clients to omit their client-side decorations if possible.
@@ -385,7 +385,7 @@ binds {
     Mod+Shift+Return hotkey-overlay-title="Open a Terminal: ghostty" { spawn "ghostty"; }
     Mod+P hotkey-overlay-title="Run an Application: fuzzel" { spawn "fuzzel"; }
     Mod+Shift+B hotkey-overlay-title="Run Browser: zen" { spawn "/home/dinesh-24010/Software/zen/zen"; }
-    Super+Alt+L hotkey-overlay-title="Lock the Screen: swaylock" { spawn "swaylock"; }
+	Mod+Shift+Y hotkey-overlay-title="Lock the Screen: swaylock"{ spawn "/home/dinesh-24010/Software/scripts/lock";}
 
     // You can also use a shell. Do this if you need pipes, multiple commands, etc.
     // Note: the entire command goes as a single argument in the end.
@@ -592,6 +592,7 @@ binds {
     // Move the focused window between the floating and the tiling layout.
 	Mod+V       { toggle-window-floating; }
 	Mod+Shift+V { switch-focus-between-floating-and-tiling; }
+
 
     // Toggle tabbed column display mode.
     // Windows in this column will appear as vertical tabs,
