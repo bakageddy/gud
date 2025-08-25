@@ -83,7 +83,7 @@ return require('packer').startup(function(use)
 	use { 'neovim/nvim-lspconfig' }
 	use { 'mason-org/mason.nvim' }
 	use { 'mason-org/mason-lspconfig.nvim' }
-	use { 'folke/neodev.nvim' }
+	use { 'folke/lazydev.nvim' }
 
 	-- Autocompletion
 	use { 'saghen/blink.cmp' }
@@ -148,6 +148,6 @@ return require('packer').startup(function(use)
 	use 'ellisonleao/gruvbox.nvim'
 	use 'miikanissi/modus-themes.nvim'
 	use 'rebelot/kanagawa.nvim'
-	use 'oahlen/iceberg.nvim'
+	use 'craftzdog/solarized-osaka.nvim'
 	use 'webhooked/kanso.nvim'
 end)

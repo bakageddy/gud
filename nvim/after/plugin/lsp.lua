@@ -1,7 +1,7 @@
 ---@diagnostic disable
 local cmp = require("blink.cmp")
 -- local snip = require("luasnip")
-local neodev = require("neodev")
+local lazydev = require("lazydev")
 local config = require("lspconfig")
 local lsp_capabilities = cmp.get_lsp_capabilities()
 
@@ -285,4 +285,4 @@ require("mason-lspconfig").setup({
 --   callback = jdtls_setup,
 -- })
 
-neodev.setup()
+lazydev.setup()

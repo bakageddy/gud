@@ -9,6 +9,10 @@ pulse
 gnome-initial-setup-done
 mimeapps.list
 niri-xdg-terminals.list
+tiling-assistant
+GNOME-xdg-terminals.list
+ubuntu-xdg-terminals.list
+go
 user-dirs.dirs
 user-dirs.locale
 xdg-terminals.list

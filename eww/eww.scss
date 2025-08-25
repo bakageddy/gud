@@ -5,20 +5,21 @@
 .bar {
   opacity: 0.99;
   border-radius: 1.6rem;
-  background-color: rgba($color: #1D2021, $alpha: 0.99);
-  color: #EBDBB2;
+  /* background-color: rgba($color: #1D2021, $alpha: 0.99); */
+  background-color: rgba($color: #001419, $alpha: 0.99);
+  color: #FDF5E2;
   font-family: "Iosevka NFM";
 }
 
 .common {
-  font-family: "Iosevka NFM";
+  font-family: "Iosevka Term NFM";
   font-size: 2rem;
   font-weight: 900;
   padding: 1rem;
 }
 
 .time {
-  color: #B8BB26;
+  color: #849900;
 }
 
 
@@ -27,6 +28,6 @@
 }
 
 .start {
-  color: #FB4934;
+  color: #db302d;
   font-size: 3.2rem;
 }

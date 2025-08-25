@@ -11,6 +11,10 @@ environment {
 	DISPLAY ":0"
 }
 
+overview {
+	backdrop-color "#000000"
+}
+
 input {
     keyboard {
         xkb {
@@ -123,8 +127,7 @@ output "Samsung Electric Company SAMSUNG 0x01000E00" {
 output "LG Electronics LG ULTRAGEAR 502NTJJ6N108" {
 	mode "1920x1080@179.961"
 	scale 1
-	position x=1920 y=0
-	transform "90"
+	position x=-1920 y=0
 }
 
 // Settings that influence how windows are positioned and sized.
@@ -384,8 +387,11 @@ binds {
     Mod+Return hotkey-overlay-title="Open a Terminal: footclient" { spawn "footclient"; }
     Mod+Shift+Return hotkey-overlay-title="Open a Terminal: ghostty" { spawn "ghostty"; }
     Mod+P hotkey-overlay-title="Run an Application: fuzzel" { spawn "fuzzel"; }
-    Mod+Shift+B hotkey-overlay-title="Run Browser: zen" { spawn "/home/dinesh-24010/Software/zen/zen"; }
+    Mod+Shift+B hotkey-overlay-title="Run Browser: firefox" { spawn "/home/dinesh-24010/Software/firefox/mach" "run"; }
 	Mod+Shift+Y hotkey-overlay-title="Lock the Screen: swaylock"{ spawn "/home/dinesh-24010/Software/scripts/lock";}
+	Mod+Insert hotkey-overlay-title="Music: prev" {spawn "mpc" "prev";}
+	Mod+Delete hotkey-overlay-title="Music: next" {spawn "mpc" "next";}
+	Mod+Shift+Insert hotkey-overlay-title="Music: toggle" {spawn "mpc" "toggle";}
 
     // You can also use a shell. Do this if you need pipes, multiple commands, etc.
     // Note: the entire command goes as a single argument in the end.

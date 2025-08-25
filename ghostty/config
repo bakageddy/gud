@@ -1,7 +1,7 @@
-font-family = Iosevka NFM Medium
-font-style-bold = Iosevka NFM Bold
-font-style-bold-italic = Iosevka NFM Bold
-font-style-italic = Iosevka NFM Medium
+# font-family = Iosevka NFM Medium
+# font-style-bold = Iosevka NFM Bold
+# font-style-bold-italic = Iosevka NFM Bold
+# font-style-italic = Iosevka NFM Medium
 
 # font-family=GTPressuraMono
 
@@ -15,10 +15,11 @@ font-style-italic = Iosevka NFM Medium
 # font-style-bold-italic = CommitMono Bold Italic
 # font-style-italic = CommitMono Italic
 
-# font-family = JetBrainsMono Nerd Font
-# font-style-bold = false
-# font-style-bold-italic = false
-# font-style-italic = false
+font-family = JetBrainsMono NFM
+font-style-bold = false
+font-style-bold-italic = false
+font-style-italic = false
+adjust-cell-height = +15%
 
 # font-family = GitLab Mono
 # font-style-bold = GitLab Mono
@@ -27,7 +28,7 @@ font-style-italic = Iosevka NFM Medium
 
 font-size=14
 # adjust-cell-width = -10%
-adjust-cell-height = +15%
+# adjust-cell-height = +15%
 # custom-shader = "~/.config/ghostty/shaders/crt.glsl"
 
 window-decoration = none
@@ -35,7 +36,7 @@ window-theme = ghostty
 window-padding-x = 30
 window-padding-y = 30
 # theme = kanso-pearl
-theme = gruvbox
+theme = solarized-osaka
 selection-invert-fg-bg = true
 
 keybind = ctrl+a>n=new_window
