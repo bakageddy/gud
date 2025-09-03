@@ -30,3 +30,9 @@ pdfcpu
 pavucontrol.ini
 nautilus
 .gsd-keyboard.settings-ported
+qBittorrent
+systemd
+QtProject.conf
+epy/*.db
+TortoiseHg
+matplotlib
