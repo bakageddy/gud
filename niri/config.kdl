@@ -398,7 +398,8 @@ binds {
     Mod+Return hotkey-overlay-title="Open a Terminal: footclient" { spawn "footclient"; }
     Mod+Shift+Return hotkey-overlay-title="Open a Terminal: ghostty" { spawn "ghostty"; }
     Mod+P hotkey-overlay-title="Run an Application: fuzzel" { spawn "fuzzel"; }
-    Mod+Shift+B hotkey-overlay-title="Run Browser: firefox" { spawn "/home/dinesh-24010/Software/firefox/mach" "run"; }
+    // Mod+Shift+B hotkey-overlay-title="Run Browser: firefox" { spawn "/home/dinesh-24010/Software/firefox/mach" "run"; }
+    Mod+Shift+B hotkey-overlay-title="Run Browser: zen" { spawn "zen"; }
 	Mod+Shift+Y hotkey-overlay-title="Lock the Screen: swaylock"{ spawn "/home/dinesh-24010/Software/scripts/lock";}
 	Mod+Insert hotkey-overlay-title="Music: prev" {spawn "mpc" "prev";}
 	Mod+Delete hotkey-overlay-title="Music: next" {spawn "mpc" "next";}
@@ -418,6 +419,8 @@ binds {
     // Example brightness key mappings for brightnessctl.
     XF86MonBrightnessUp allow-when-locked=true { spawn "brightnessctl" "--class=backlight" "set" "+10%"; }
     XF86MonBrightnessDown allow-when-locked=true { spawn "brightnessctl" "--class=backlight" "set" "10%-"; }
+    // F5 allow-when-locked=true { spawn "brightnessctl" "--class=backlight" "set" "10%-"; }
+    // F6 allow-when-locked=true { spawn "brightnessctl" "--class=backlight" "set" "+10%"; }
 
     // Open/close the Overview: a zoomed-out view of workspaces and windows.
     // You can also move the mouse into the top-left hot corner,

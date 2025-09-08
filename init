@@ -1,3 +1,7 @@
 #!/usr/bin/env sh
 
+TMUX_PLUGIN_PATH=$HOME/.config/tmux-resurrect/
+if [ -L $TMUX_PLUGIN_PATH ] && [ -e $TMUX_PLUGIN_PATH ] ; then
+	exit
+fi
 ln -s $HOME/.config/tmux-resurrect $HOME/.config/tmux/plugins/tmux-resurrect
