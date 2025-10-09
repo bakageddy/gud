@@ -1,9 +1,10 @@
 local lualine = require 'lualine'
 local themes = require 'dinesh.themes'
+local bufferline = require 'bufferline'
 
 -- Color table for highlights
 -- stylua: ignore
-local colors = themes.osaka
+local colors = themes.gruvbox
 -- local colors = themes.grayscale_dark
 
 local conditions = {
@@ -216,6 +217,13 @@ ins_right {
 
 
 lualine.setup(config)
+
+bufferline.setup({
+	options = {
+		style_preset = bufferline.style_preset.minimal,
+		separator_style = 'slant'
+	}
+})
 
 -- lualine.setup {
 -- 	theme = 'auto'

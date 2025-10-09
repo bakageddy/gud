@@ -1,7 +1,7 @@
-# font-family = Iosevka NFM Medium
-# font-style-bold = Iosevka NFM Bold
-# font-style-bold-italic = Iosevka NFM Bold
-# font-style-italic = Iosevka NFM Medium
+# font-family = IosevkaTerm NFM Medium
+# font-style-bold = IosevkaTerm NFM Bold
+# font-style-bold-italic = IosevkaTerm NFM Bold
+# font-style-italic = IosevkaTerm NFM Medium
 
 # font-family=GTPressuraMono
 
@@ -36,7 +36,7 @@ window-theme = ghostty
 window-padding-x = 30
 window-padding-y = 30
 # theme = kanso-pearl
-theme = solarized-osaka
+theme = gruvbox
 selection-invert-fg-bg = true
 
 keybind = ctrl+a>n=new_window

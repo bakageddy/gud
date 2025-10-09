@@ -12,7 +12,7 @@ environment {
 }
 
 overview {
-	backdrop-color "#001419"
+	backdrop-color "#1D2021"
 }
 
 input {
@@ -131,14 +131,9 @@ output "LG Electronics LG ULTRAGEAR 502NTJJ6N108" {
 }
 
 output "LG Electronics LG ULTRAFINE 506NTABHK400" {
-	scale 1
-	position x=-1920 y=0
-}
-
-output "LG Electronics LG ULTRAGEAR 502NTJJ6N108" {
-	mode "1920x1080@179.961"
-	scale 1
-	position x=-1920 y=0
+	scale 1.0
+	// position x=-1920 y=0
+	position x=0 y=-2160
 }
 
 // Settings that influence how windows are positioned and sized.

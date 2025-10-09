@@ -36,3 +36,6 @@ QtProject.conf
 epy/*.db
 TortoiseHg
 matplotlib
+GIMP
+libreoffice
+gtk-2.0

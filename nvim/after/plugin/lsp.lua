@@ -85,11 +85,17 @@ require("mason-lspconfig").setup({
 	},
 	handlers = {
 		function(server_name)
+			if (server_name == 'jdlts') then
+				config[server_name].setup({
+					init_options = {
+						bundles = '/home/dinesh-24010/Projects/Work/jars/'
+					}
+				})
+			end
 			config[server_name].setup({
 				capabilities = vim.lsp.protocol.make_client_capabilities,
 			})
 		end,
-		-- jdtls = function () end,
 	}
 });
 --

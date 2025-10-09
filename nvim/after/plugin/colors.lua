@@ -89,7 +89,7 @@ function ColorMe()
 	}
 
 	-- vim.o.background = 'light'
-	vim.cmd.colorscheme [[solarized-osaka]]
+	vim.cmd.colorscheme [[gruvbox]]
 
 	vim.api.nvim_set_hl(0, "Visual", {
 		reverse = true,

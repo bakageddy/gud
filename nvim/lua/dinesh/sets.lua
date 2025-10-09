@@ -1,5 +1,7 @@
 vim.g.loaded_netrw = 1
 vim.g.loaded_netrwPlugin = 1
+vim.g.number = true
+vim.g.relativenumber = true
 
 vim.opt.splitright = true
 vim.opt.splitbelow = true
@@ -29,3 +31,4 @@ vim.opt.sidescrolloff = 8
 
 vim.wo.wrap = false
 vim.cmd [[set t_Co=256]]
+vim.cmd [[let g:omni_sql_default_compl_type = 'syntax']]

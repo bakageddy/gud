@@ -3,7 +3,6 @@ local null = require("null-ls")
 null.setup({
 	sources = {
 		null.builtins.formatting.gofumpt,
-		null.builtins.formatting.sql_formatter,
 		null.builtins.formatting.prettierd,
 		-- null.builtins.formatting.autoflake,
 		--
