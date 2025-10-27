@@ -20,6 +20,7 @@ font-style-bold = false
 font-style-bold-italic = false
 font-style-italic = false
 adjust-cell-height = +15%
+background-blur = 10
 
 # font-family = GitLab Mono
 # font-style-bold = GitLab Mono

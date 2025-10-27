@@ -120,14 +120,14 @@ output "eDP-1" {
 
 output "Samsung Electric Company SAMSUNG 0x01000E00" {
 	mode "3840x2160@30.0"
-	scale 1
+	scale 1.5
 	position x=0 y=0
 }
 
 output "LG Electronics LG ULTRAGEAR 502NTJJ6N108" {
 	mode "1920x1080@179.961"
 	scale 1
-	position x=-1920 y=0
+	position x=0 y=-1080
 }
 
 output "LG Electronics LG ULTRAFINE 506NTABHK400" {
@@ -335,6 +335,15 @@ animations {
 // Window rules let you adjust behavior for individual windows.
 // Find more information on the wiki:
 // https://github.com/YaLTeR/niri/wiki/Configuration:-Window-Rules
+
+window-rule {
+    // This regular expression is intentionally made as specific as possible,
+    // since this is the default config, and we want no false positives.
+    // You can get away with just app-id="wezterm" if you want.
+	match app-id="foot"
+	match app-id="ghostty"
+	// opacity 0.90
+}
 
 // Work around WezTerm's initial configure bug
 // by setting an empty default-column-width.
