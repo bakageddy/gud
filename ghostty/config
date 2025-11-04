@@ -1,7 +1,7 @@
-# font-family = IosevkaTerm NFM Medium
-# font-style-bold = IosevkaTerm NFM Bold
-# font-style-bold-italic = IosevkaTerm NFM Bold
-# font-style-italic = IosevkaTerm NFM Medium
+font-family = IosevkaTerm NFM Medium
+font-style-bold = IosevkaTerm NFM Bold
+font-style-bold-italic = IosevkaTerm NFM Bold
+font-style-italic = IosevkaTerm NFM Medium
 
 # font-family=GTPressuraMono
 
@@ -15,12 +15,12 @@
 # font-style-bold-italic = CommitMono Bold Italic
 # font-style-italic = CommitMono Italic
 
-font-family = JetBrainsMono NFM
-font-style-bold = false
-font-style-bold-italic = false
-font-style-italic = false
-adjust-cell-height = +15%
-background-blur = 10
+# font-family = JetBrainsMono NFM
+# font-style-bold = false
+# font-style-bold-italic = false
+# font-style-italic = false
+# adjust-cell-height = +15%
+# background-blur = 10
 
 # font-family = GitLab Mono
 # font-style-bold = GitLab Mono
