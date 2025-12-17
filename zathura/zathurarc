@@ -1,4 +1,4 @@
-include                         ./gruvbox
+include                         ./rosepine
 set font                        "IosevkaTerm NF 16"
 set scroll-page-aware           "true"
 set recolor                     "true"
