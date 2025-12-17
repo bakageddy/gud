@@ -1,19 +1,21 @@
-(defpoll hours
-	:interval "10s"
-    :initial "initial-value"
-    :run-while time-visible
-	`date +%H`)
+(include 'horizontal.yuck')
 
-(defpoll minutes
-	:interval "10s"
-    :initial "initial-value"
-    :run-while time-visible
-	`date +%M`)
-
-(defwidget time[]
-	(box :orientation "v" :space-evenly false :class "common time" 
-		(box (label :class "time__hours" :text "${hours}"))
-		(box (label :class "time__minutes" :text "${minutes}"))))
+;; (defpoll hours
+;; 	:interval "10s"
+;;     :initial "initial-value"
+;;     :run-while time-visible
+;; 	`date +%H`)
+;;
+;; (defpoll minutes
+;; 	:interval "10s"
+;;     :initial "initial-value"
+;;     :run-while time-visible
+;; 	`date +%M`)
+;;
+;; (defwidget time[]
+;; 	(box :orientation "v" :space-evenly false :class "common time" 
+;; 		(box (label :class "time__hours" :text "${hours}"))
+;; 		(box (label :class "time__minutes" :text "${minutes}"))))
 
 (defvar power_reveal false)
 

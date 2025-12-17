@@ -2,24 +2,27 @@
   all: unset;
 }
 
-.bar {
+.bar, .horizontal {
   opacity: 0.99;
-  border-radius: 1.6rem;
+  border-radius: 1.2rem;
   background-color: rgba($color: #1D2021, $alpha: 0.99);
+  /* background-color: rgba($color: #191724, $alpha: 0.99); */
   /* background-color: rgba($color: #001419, $alpha: 0.99); */
-  color: #FDF5E2;
+  /* color: #FDF5E2; */
+  color: #e0def4;
   font-family: "Iosevka NFM";
 }
 
 .common {
   font-family: "Iosevka Term NFM";
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-weight: 900;
-  padding: 1rem;
+  padding: 0.2rem;
 }
 
 .time {
   color: #b8bb26;
+  /* color: #9ccfd8; */
 }
 
 
@@ -28,6 +31,34 @@
 }
 
 .start {
+  all: unset;
   color: #fb4934;
-  font-size: 3.2rem;
+  /* color: #c4a7e7; */
+  font-size: 2rem;
+  padding-right: 1rem;
+  padding-left: 1.4rem;
+}
+
+.common.time {
+  padding-right: 1.4rem;
+}
+
+.time__hours {
+  color: #B8BB26;
+  /* color: #9ccfd8; */
+}
+
+.time__minutes {
+  color: #B8BB26;
+  /* color: #9ccfd8; */
+}
+
+.time__separator {
+  color: #FF5F5F;
+  /* color: #eb6f92; */
+}
+
+.battery__perc {
+  color: #FABD2F;
+  /* color: #EBBCBA; */
 }

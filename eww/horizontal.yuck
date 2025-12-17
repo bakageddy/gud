@@ -1,0 +1,47 @@
+(defwidget left[]
+	(box :halign "start" :orientation "h" :space-evenly false :class "left"
+		(button :class "common left start" :onclick "fuzzel" "")))
+
+(defwidget middle[]
+	(box ""))
+
+(defpoll hours
+	:interval "10s"
+    :initial "initial-value"
+    :run-while time-visible
+	`date +%H`)
+
+(defpoll minutes
+	:interval "10s"
+    :initial "initial-value"
+    :run-while time-visible
+	`date +%M`)
+
+
+(defwidget time[]
+	(box :orientation "h" :space-evenly false :class "common time" 
+		(box (label :class "time__hours" :text "${hours}"))
+		(box (label :class "time__separator" :text ":"))
+		(box (label :class "time__minutes" :text "${minutes}"))))
+
+(defwidget sound[]
+	(box :orientation "h" :space-evenly false :class "common sound"))
+
+(defwidget hbattery[]
+	(box :orientation "h" :space-evenly false :class "hbattery common"
+		(label :class "battery__perc" :text "${battery_total}%")))
+
+(defwidget right[]
+	(box :halign "end" :orientation "h" :space-evenly true :class "right"
+		(hbattery)
+		(time)))
+
+(defwidget horizontal-bar[]
+	(centerbox :orientation "h" :space-evenly false :class "horizontal bar"
+		(left) (middle) (right)))
+
+(defwindow horizontal-bar
+	:monitor '[0, 1]'
+	:geometry (geometry :x "0%" :y "0.5%" :height "12px" :width "98%" :anchor "center top")
+	:exclusive true
+	(horizontal-bar))

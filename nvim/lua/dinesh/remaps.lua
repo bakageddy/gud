@@ -14,16 +14,17 @@ vim.keymap.set("n", "<LEADER>rb", "<C-^>", {})
 vim.keymap.set("n", "<LEADER>on", "<CMD>Neotree toggle<CR>", {})
 
 vim.keymap.set("n", "<LEADER>p", [["+p]], {})
+vim.keymap.set("n", [[<LEADER>y]], [["+y]], {})
 
-vim.keymap.set("n", "<UP>", "<NOP>", {})
-vim.keymap.set("n", "<DOWN>", "<NOP>", {})
-vim.keymap.set("n", "<LEFT>", "<NOP>", {})
-vim.keymap.set("n", "<RIGHT>", "<NOP>", {})
-
-vim.keymap.set("i", "<UP>", "<NOP>", {})
-vim.keymap.set("i", "<DOWN>", "<NOP>", {})
-vim.keymap.set("i", "<LEFT>", "<NOP>", {})
-vim.keymap.set("i", "<RIGHT>", "<NOP>", {})
+-- vim.keymap.set("n", "<UP>", "<NOP>", {})
+-- vim.keymap.set("n", "<DOWN>", "<NOP>", {})
+-- vim.keymap.set("n", "<LEFT>", "<NOP>", {})
+-- vim.keymap.set("n", "<RIGHT>", "<NOP>", {})
+--
+-- vim.keymap.set("i", "<UP>", "<NOP>", {})
+-- vim.keymap.set("i", "<DOWN>", "<NOP>", {})
+-- vim.keymap.set("i", "<LEFT>", "<NOP>", {})
+-- vim.keymap.set("i", "<RIGHT>", "<NOP>", {})
 
 vim.keymap.set("n", "<LEADER>j", ":wincmd j<CR>", {})
 vim.keymap.set("n", "<LEADER>h", ":wincmd h<CR>", {})

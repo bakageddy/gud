@@ -185,4 +185,18 @@ M.osaka = {
 	red      = '#db302d',
 }
 
+M.paper = {
+	bg = '#EEEEEE',
+	fg = '#444444',
+	yellow   = '#444444',
+	cyan     = '#b2b2b2',
+	darkblue = '#b2b2b2',
+	green    = '#444444',
+	orange   = '#444444',
+	violet   = '#b2b2b2',
+	magenta  = '#b2b2b2',
+	blue     = '#b2b2b2',
+	red      = '#444444',
+}
+
 return M

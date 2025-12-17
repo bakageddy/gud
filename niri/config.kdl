@@ -120,20 +120,20 @@ output "eDP-1" {
 
 output "Samsung Electric Company SAMSUNG 0x01000E00" {
 	mode "3840x2160@30.0"
-	scale 1.5
+	scale 1
 	position x=0 y=0
 }
 
 output "LG Electronics LG ULTRAGEAR 502NTJJ6N108" {
 	mode "1920x1080@179.961"
-	scale 1
-	position x=0 y=-1080
+	scale 1.0
+	position x=1920 y=0
 }
 
 output "LG Electronics LG ULTRAFINE 506NTABHK400" {
-	scale 1.0
-	// position x=-1920 y=0
-	position x=0 y=-2160
+	scale 1.5
+	position x=-1920 y=0
+	// position x=0 y=-2160
 }
 
 // Settings that influence how windows are positioned and sized.
@@ -149,7 +149,7 @@ layout {
     // - "always", the focused column will always be centered.
     // - "on-overflow", focusing a column will center it if it doesn't fit
     //   together with the previously focused column.
-    center-focused-column "always"
+    center-focused-column "on-overflow"
 
     // You can customize the widths that "switch-preset-column-width" (Mod+R) toggles between.
     preset-column-widths {
@@ -168,7 +168,7 @@ layout {
     // preset-window-heights { }
 
     // You can change the default width of the new windows.
-    default-column-width { proportion 0.8; }
+    default-column-width { proportion 1.0; }
     // If you leave the brackets empty, the windows themselves will decide their initial width.
     // default-column-width {}
 
@@ -302,7 +302,7 @@ layout {
 spawn-at-startup "/home/dinesh-24010/Software/xwayland-satellite/target/release/xwayland-satellite"
 spawn-at-startup "/home/dinesh-24010/Software/swww/target/release/swww-daemon"
 // spawn-at-startup "/home/dinesh-24010/Software/swww/target/release/swww" "img" "/home/dinesh-24010/Pictures/walls/gruvbox/gruvboxAstro.jpg"
-spawn-at-startup "/home/dinesh-24010/Software/eww/target/release/eww" "open" "bar"
+spawn-at-startup "/home/dinesh-24010/Software/eww/target/release/eww" "open" "horizontal-bar"
 spawn-at-startup "foot" "-s"
 spawn-at-startup "dunst"
 
@@ -342,7 +342,7 @@ window-rule {
     // You can get away with just app-id="wezterm" if you want.
 	match app-id="foot"
 	match app-id="ghostty"
-	// opacity 0.90
+	// opacity 0.84
 }
 
 // Work around WezTerm's initial configure bug
@@ -404,7 +404,7 @@ binds {
     Mod+P hotkey-overlay-title="Run an Application: fuzzel" { spawn "fuzzel"; }
     // Mod+Shift+B hotkey-overlay-title="Run Browser: firefox" { spawn "/home/dinesh-24010/Software/firefox/mach" "run"; }
     Mod+Shift+B hotkey-overlay-title="Run Browser: zen" { spawn "zen"; }
-	Mod+Shift+Y hotkey-overlay-title="Lock the Screen: swaylock"{ spawn "/home/dinesh-24010/Software/scripts/lock";}
+	// Mod+Shift+Y hotkey-overlay-title="Lock the Screen: swaylock"{ spawn "swaylock";}
 	Mod+Insert hotkey-overlay-title="Music: prev" {spawn "mpc" "prev";}
 	Mod+Delete hotkey-overlay-title="Music: next" {spawn "mpc" "next";}
 	Mod+Shift+Insert hotkey-overlay-title="Music: toggle" {spawn "mpc" "toggle";}
@@ -631,7 +631,7 @@ binds {
     Mod+Space       { switch-layout "next"; }
     Mod+Shift+Space { switch-layout "prev"; }
 
-    Print { screenshot; }
+    Mod+Shift+P { screenshot; }
     Ctrl+Print { screenshot-screen; }
     Alt+Print { screenshot-window; }
 
@@ -651,5 +651,5 @@ binds {
 
     // Powers off the monitors. To turn them back on, do any input like
     // moving the mouse or pressing any other key.
-    Mod+Shift+P { power-off-monitors; }
+    Mod+Shift+Y { power-off-monitors; }
 }

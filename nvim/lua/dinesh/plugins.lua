@@ -8,6 +8,8 @@ return require('packer').startup(function(use)
     -- Tmux
     use 'tmux-plugins/vim-tmux'
     use 'jedrzejboczar/possession.nvim'
+	use 'vimpostor/vim-tpipeline'
+	use 'jlfwong/vim-mercenary'
 
     -- Git
     use {
@@ -148,7 +150,7 @@ return require('packer').startup(function(use)
     -- Colorscheme
     use 'ellisonleao/gruvbox.nvim'
     use 'miikanissi/modus-themes.nvim'
-    use 'rebelot/kanagawa.nvim'
+    use 'rose-pine/neovim'
     use 'craftzdog/solarized-osaka.nvim'
     use 'webhooked/kanso.nvim'
 end)

@@ -1,0 +1,22 @@
+palette = 0=#444444
+palette = 1=#C35D46
+palette = 2=#91BDA3
+palette = 3=#444444
+palette = 4=#444444
+palette = 5=#444444
+palette = 6=#444444
+palette = 7=#444444
+palette = 8=#B2B2B2
+palette = 9=#B2B2B2
+palette = 10=#B2B2B2
+palette = 11=#B2B2B2
+palette = 12=#B2B2B2
+palette = 13=#B2B2B2
+palette = 14=#B2B2B2
+palette = 15=#B2B2B2
+background = #EEEEEE
+foreground = #444444
+cursor-color = #444444
+selection-invert-fg-bg = true
+# selection-background = #A9B664
+# selection-foreground = #1D2021

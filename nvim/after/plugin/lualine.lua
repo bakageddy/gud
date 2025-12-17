@@ -1,6 +1,6 @@
 local lualine = require 'lualine'
-local themes = require 'dinesh.themes'
 local bufferline = require 'bufferline'
+local themes = require 'dinesh.themes'
 
 -- Color table for highlights
 -- stylua: ignore
@@ -220,8 +220,8 @@ lualine.setup(config)
 
 bufferline.setup({
 	options = {
-		style_preset = bufferline.style_preset.minimal,
-		separator_style = 'slant'
+		style_preset = bufferline.style_preset.no_bold,
+		separator_style = 'powerline'
 	}
 })
 

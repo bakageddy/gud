@@ -1,4 +1,4 @@
-local kanagawa = require 'kanagawa'
+-- local kanagawa = require 'kanagawa'
 local gruvbox = require 'gruvbox'
 local solarized = require 'solarized-osaka'
 -- local modus = require "modus-themes"
@@ -43,50 +43,50 @@ function ColorMe()
 		}
 	}
 
-	kanagawa.setup {
-		overrides = function(_)
-			return {
-				Visual = { reverse = true },
-				FloatBorder = { bg = "#1f1f28" },
-				SignColumn = { fg = "#1f1f28", bg = "#1f1f28" }
-			}
-		end,
-		theme = "dragon",
-	}
+	-- kanagawa.setup {
+	-- 	overrides = function(_)
+	-- 		return {
+	-- 			Visual = { reverse = true },
+	-- 			FloatBorder = { bg = "#1f1f28" },
+	-- 			SignColumn = { fg = "#1f1f28", bg = "#1f1f28" }
+	-- 		}
+	-- 	end,
+	-- 	theme = "dragon",
+	-- }
 
-	solarized.setup {
-		transparent = true,
-		on_highlights = function(hl, c)
-			local prompt = "#2d3149"
-			hl.TelescopeNormal = {
-				bg = c.bg_dark,
-				fg = c.fg_dark,
-			}
-			hl.TelescopeBorder = {
-				bg = c.bg_dark,
-				fg = c.bg_dark,
-			}
-			hl.TelescopePromptNormal = {
-				bg = prompt,
-			}
-			hl.TelescopePromptBorder = {
-				bg = prompt,
-				fg = prompt,
-			}
-			hl.TelescopePromptTitle = {
-				bg = prompt,
-				fg = prompt,
-			}
-			hl.TelescopePreviewTitle = {
-				bg = c.bg_dark,
-				fg = c.bg_dark,
-			}
-			hl.TelescopeResultsTitle = {
-				bg = c.bg_dark,
-				fg = c.bg_dark,
-			}
-		end
-	}
+	-- solarized.setup {
+	-- 	transparent = true,
+	-- 	on_highlights = function(hl, c)
+	-- 		local prompt = "#2d3149"
+	-- 		hl.TelescopeNormal = {
+	-- 			bg = c.bg_dark,
+	-- 			fg = c.fg_dark,
+	-- 		}
+	-- 		hl.TelescopeBorder = {
+	-- 			bg = c.bg_dark,
+	-- 			fg = c.bg_dark,
+	-- 		}
+	-- 		hl.TelescopePromptNormal = {
+	-- 			bg = prompt,
+	-- 		}
+	-- 		hl.TelescopePromptBorder = {
+	-- 			bg = prompt,
+	-- 			fg = prompt,
+	-- 		}
+	-- 		hl.TelescopePromptTitle = {
+	-- 			bg = prompt,
+	-- 			fg = prompt,
+	-- 		}
+	-- 		hl.TelescopePreviewTitle = {
+	-- 			bg = c.bg_dark,
+	-- 			fg = c.bg_dark,
+	-- 		}
+	-- 		hl.TelescopeResultsTitle = {
+	-- 			bg = c.bg_dark,
+	-- 			fg = c.bg_dark,
+	-- 		}
+	-- 	end
+	-- }
 
 	-- vim.o.background = 'light'
 	vim.cmd.colorscheme [[gruvbox]]

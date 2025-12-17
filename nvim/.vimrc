@@ -8,20 +8,20 @@ set scrolloff=10
 set noswapfile
 
 
-call plug#begin()
-Plug 'morhetz/gruvbox'
-Plug 'jiangmiao/auto-pairs'
-Plug 'sheerun/vim-polyglot'
-Plug 'vim-airline/vim-airline'
-Plug 'vim-airline/vim-airline-themes'
-call plug#end()
+" call plug#begin()
+" Plug 'morhetz/gruvbox'
+" Plug 'jiangmiao/auto-pairs'
+" Plug 'sheerun/vim-polyglot'
+" Plug 'vim-airline/vim-airline'
+" Plug 'vim-airline/vim-airline-themes'
+" call plug#end()
 
-let g:airline_powerline_fonts=1
-let g:airline_theme='gruvbox'
-let g:gruvbox_transparent_bg=1
-let g:gruvbox_contrast_dark="hard"
-colorscheme gruvbox
-set background=dark
+" let g:airline_powerline_fonts=1
+" let g:airline_theme='gruvbox'
+" let g:gruvbox_transparent_bg=1
+" let g:gruvbox_contrast_dark="hard"
+" colorscheme gruvbox
+" set background=dark
 
 let mapleader=" "
 
