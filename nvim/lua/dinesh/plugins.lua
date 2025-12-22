@@ -97,10 +97,11 @@ return require('packer').startup(function(use)
     use { 'L3MON4D3/LuaSnip' }
     use { 'rafamadriz/friendly-snippets' }
 
+	-- Debugger
     use {
         "mfussenegger/nvim-dap",
         requires = {
-            { 'rcarriga/nvim-dap-ui' },
+            { 'igorlfs/nvim-dap-view' },
             { 'nvim-neotest/nvim-nio' },
             { 'williamboman/mason.nvim' },
             { 'jay-babu/mason-nvim-dap.nvim' },
@@ -126,7 +127,6 @@ return require('packer').startup(function(use)
 
     use {
         'nvimdev/indentmini.nvim',
-
     }
 
     use {
