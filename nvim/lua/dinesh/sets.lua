@@ -8,7 +8,6 @@ vim.opt.splitbelow = true
 vim.opt.incsearch = true
 vim.opt.showcmd = true
 vim.opt.termguicolors = true
-vim.opt.laststatus = 3
 vim.opt.clipboard = "unnamedplus"
 
 vim.opt.ruler = true
@@ -27,6 +26,7 @@ vim.opt.softtabstop = 4
 vim.opt.shiftwidth = 4
 vim.opt.scrolloff = 15
 vim.opt.sidescrolloff = 15
+vim.g.colorcolumn=80
 
 vim.wo.wrap = false
 vim.cmd [[set t_Co=256]]

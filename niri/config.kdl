@@ -329,7 +329,7 @@ animations {
     // off
 
     // Slow down all animations by this factor. Values below 1 speed them up instead.
-    slowdown 1.2
+    slowdown 0.8
 }
 
 // Window rules let you adjust behavior for individual windows.
@@ -409,7 +409,12 @@ binds {
 	Mod+Delete hotkey-overlay-title="Music: next" {spawn "mpc" "next";}
 	Mod+Shift+Insert hotkey-overlay-title="Music: toggle" {spawn "mpc" "toggle";}
 
-    // You can also use a shell. Do this if you need pipes, multiple commands, etc.
+	XF86AudioNext allow-when-locked=true { spawn "mpc" "next"; }
+	XF86AudioPrev allow-when-locked=true { spawn "mpc" "prev"; }
+	XF86AudioPlay allow-when-locked=true { spawn "mpc" "play"; }
+	XF86AudioStop allow-when-locked=true { spawn "mpc" "pause"; }
+
+	// You can also use a shell. Do this if you need pipes, multiple commands, etc.
     // Note: the entire command goes as a single argument in the end.
     // Mod+T { spawn "bash" "-c" "notify-send hello && exec alacritty"; }
 

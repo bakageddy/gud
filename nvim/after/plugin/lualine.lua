@@ -4,7 +4,7 @@ local themes = require 'dinesh.themes'
 
 -- Color table for highlights
 -- stylua: ignore
-local colors = themes.gruvbox
+local colors = themes.gruvbox_flat
 -- local colors = themes.grayscale_dark
 
 local conditions = {
@@ -25,7 +25,6 @@ local conditions = {
 
 -- Config
 local config = {
-	globalstatus = true,
 	options = {
 		-- Disable sections and component separators
 		component_separators = '',
@@ -38,6 +37,7 @@ local config = {
 			inactive = { c = { fg = colors.fg, bg = colors.bg } },
 		},
 	},
+	globalstatus = true,
 	sections = {
 		-- these are to remove the defaults
 		lualine_a = {},
@@ -100,6 +100,7 @@ ins_left {
 			t = colors.red,
 		}
 		vim.api.nvim_command('hi! LualineMode guifg=' .. mode_color[vim.fn.mode()] .. ' guibg=' .. colors.bg)
+		-- return '🏍 '
 		return ''
 	end,
 	color = 'LualineMode',
@@ -192,13 +193,6 @@ ins_right {
 	cond = conditions.hide_in_width,
 }
 
-ins_right {
-	function()
-		return '▊'
-	end,
-	color = { fg = colors.blue },
-	padding = { left = 1 },
-}
 
 -- Add components to right sections
 -- ins_right {
@@ -208,22 +202,30 @@ ins_right {
 --   color = { fg = colors.green, gui = 'bold' },
 -- }
 
--- ins_right {
---   'fileformat',
---   fmt = string.upper,
---   icons_enabled = true, -- I think icons are cool but Eviline doesn't have them. sigh
---   color = { fg = colors.red, gui = 'bold' },
--- }
+ins_right {
+  'fileformat',
+  fmt = string.upper,
+  icons_enabled = false, -- I think icons are cool but Eviline doesn't have them. sigh
+  color = { fg = colors.red, gui = 'bold' },
+}
 
-
-lualine.setup(config)
+ins_right {
+	function()
+		return '▊'
+	end,
+	color = { fg = colors.blue },
+	padding = { left = 1 },
+}
 
 bufferline.setup({
 	options = {
 		style_preset = bufferline.style_preset.no_bold,
-		separator_style = 'powerline'
+		separator_style = 'slant'
 	}
 })
+
+lualine.setup(config)
+vim.opt.laststatus = 3
 
 -- lualine.setup {
 -- 	theme = 'auto'

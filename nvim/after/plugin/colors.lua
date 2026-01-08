@@ -1,5 +1,5 @@
 -- local kanagawa = require 'kanagawa'
-local gruvbox = require 'gruvbox'
+-- local gruvbox = require 'gruvbox'
 local solarized = require 'solarized-osaka'
 -- local modus = require "modus-themes"
 
@@ -11,37 +11,37 @@ function ColorMe()
 	-- local p = require("solarized.palette")
 	-- local solarized_colors = p.get_colors()
 
-	gruvbox.setup {
-		terminal_colors = false,
-		invert_selection = true,
-		contrast = "hard",
-		dim_inactive = false,
-		transparent_mode = false,
-		palette_overrides = {
-			-- red = "#ff5f5f",
-			-- bright_red = "#ff5f5f",
-			light1 = "#d4be98",
-			light0 = "#d4be98",
-		},
-		overrides = {
-			TelescopePromptTitle = { fg = gruvbox.palette.dark0_hard, bg = gruvbox.palette.bright_orange },
-			TelescopeTitle = { fg = gruvbox.palette.dark0_hard, bg = gruvbox.palette.bright_aqua },
-			TelescopePreviewTitle = { fg = gruvbox.palette.dark0_hard, bg = gruvbox.palette.bright_yellow },
-			TelescopePreviewBorder = { fg = gruvbox.palette.bright_yellow },
-			TelescopeTitleBorder = { fg = gruvbox.palette.bright_aqua },
-			TelescopePromptBorder = { fg = gruvbox.palette.bright_orange },
-			FloatBorder = { bg = gruvbox.palette.dark0_hard },
-			SignColumn = { fg = gruvbox.palette.dark0_hard, bg = gruvbox.palette.dark0_hard },
-			["@punctuation.bracket"] = { fg = gruvbox.palette.bright_orange },
-			["@module"] = { fg = gruvbox.palette.bright_aqua },
-			["@namespace"] = { link = "@module" },
-			["@keyword"] = { fg = gruvbox.palette.bright_red, italic = true },
-			IndentLine = { link = "Comment", bold = true },
-			-- IndentLineCurrent = {fg = gruvbox.palette.light1},
-			-- ["@keyword.type"] = { link = "Structure" },
-			["@type.builtin"] = { link = "Special" },
-		}
-	}
+	-- gruvbox.setup {
+	-- 	terminal_colors = false,
+	-- 	invert_selection = true,
+	-- 	contrast = "hard",
+	-- 	dim_inactive = false,
+	-- 	transparent_mode = false,
+	-- 	palette_overrides = {
+	-- 		-- red = "#ff5f5f",
+	-- 		-- bright_red = "#ff5f5f",
+	-- 		light1 = "#d4be98",
+	-- 		light0 = "#d4be98",
+	-- 	},
+	-- 	overrides = {
+	-- 		TelescopePromptTitle = { fg = gruvbox.palette.dark0_hard, bg = gruvbox.palette.bright_orange },
+	-- 		TelescopeTitle = { fg = gruvbox.palette.dark0_hard, bg = gruvbox.palette.bright_aqua },
+	-- 		TelescopePreviewTitle = { fg = gruvbox.palette.dark0_hard, bg = gruvbox.palette.bright_yellow },
+	-- 		TelescopePreviewBorder = { fg = gruvbox.palette.bright_yellow },
+	-- 		TelescopeTitleBorder = { fg = gruvbox.palette.bright_aqua },
+	-- 		TelescopePromptBorder = { fg = gruvbox.palette.bright_orange },
+	-- 		FloatBorder = { bg = gruvbox.palette.dark0_hard },
+	-- 		SignColumn = { fg = gruvbox.palette.dark0_hard, bg = gruvbox.palette.dark0_hard },
+	-- 		["@punctuation.bracket"] = { fg = gruvbox.palette.bright_orange },
+	-- 		["@module"] = { fg = gruvbox.palette.bright_aqua },
+	-- 		["@namespace"] = { link = "@module" },
+	-- 		["@keyword"] = { fg = gruvbox.palette.bright_red, italic = true },
+	-- 		IndentLine = { link = "Comment", bold = true },
+	-- 		-- IndentLineCurrent = {fg = gruvbox.palette.light1},
+	-- 		-- ["@keyword.type"] = { link = "Structure" },
+	-- 		["@type.builtin"] = { link = "Special" },
+	-- 	}
+	-- }
 
 	-- kanagawa.setup {
 	-- 	overrides = function(_)
@@ -89,7 +89,8 @@ function ColorMe()
 	-- }
 
 	-- vim.o.background = 'light'
-	vim.cmd.colorscheme [[gruvbox]]
+	vim.g.gruvbox_flat_style = "hard"
+	vim.cmd.colorscheme [[gruvbox-flat]]
 
 	vim.api.nvim_set_hl(0, "Visual", {
 		reverse = true,
