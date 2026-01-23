@@ -4,7 +4,7 @@ local themes = require 'dinesh.themes'
 
 -- Color table for highlights
 -- stylua: ignore
-local colors = themes.gruvbox_flat
+local colors = themes.gruvbox
 -- local colors = themes.grayscale_dark
 
 local conditions = {

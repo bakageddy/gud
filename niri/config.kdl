@@ -12,7 +12,8 @@ environment {
 }
 
 overview {
-	backdrop-color "#1D2021"
+	// backdrop-color "#1D2021"
+	backdrop-color "#000000"
 }
 
 input {
@@ -131,8 +132,9 @@ output "LG Electronics LG ULTRAGEAR 502NTJJ6N108" {
 }
 
 output "LG Electronics LG ULTRAFINE 506NTABHK400" {
-	scale 1.5
+	scale 1.0
 	position x=-1920 y=0
+	// transform "90"
 	// position x=0 y=-2160
 }
 
@@ -149,7 +151,7 @@ layout {
     // - "always", the focused column will always be centered.
     // - "on-overflow", focusing a column will center it if it doesn't fit
     //   together with the previously focused column.
-    center-focused-column "on-overflow"
+    center-focused-column "always"
 
     // You can customize the widths that "switch-preset-column-width" (Mod+R) toggles between.
     preset-column-widths {
@@ -190,7 +192,7 @@ layout {
         // off
 
         // How many logical pixels the ring extends out from the windows.
-        width 0
+        width 2
 
         // Colors can be set in a variety of ways:
         // - CSS named colors: "red"
@@ -198,12 +200,7 @@ layout {
         // - CSS-like notation: "rgb(255, 127, 0)", rgba(), hsl() and a few others.
 
         // Color of the ring on the active monitor.
-        active-color "#7fc8ff"
-
-        // Color of the ring on inactive monitors.
-        //
-        // The focus ring only draws around the active window, so the only place
-        // where you can see its inactive-color is on other monitors.
+        active-color "#83A598"
         inactive-color "#505050"
 
         // You can also use gradients. They take precedence over solid colors.
@@ -304,6 +301,7 @@ spawn-at-startup "/home/dinesh-24010/Software/swww/target/release/swww-daemon"
 // spawn-at-startup "/home/dinesh-24010/Software/swww/target/release/swww" "img" "/home/dinesh-24010/Pictures/walls/gruvbox/gruvboxAstro.jpg"
 spawn-at-startup "/home/dinesh-24010/Software/eww/target/release/eww" "open" "horizontal-bar"
 spawn-at-startup "foot" "-s"
+spawn-at-startup "emacs" "--daemon"
 spawn-at-startup "dunst"
 
 // Uncomment this line to ask the clients to omit their client-side decorations if possible.

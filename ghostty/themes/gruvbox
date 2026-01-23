@@ -1,4 +1,5 @@
-palette = 0=#1D2021
+# palette = 0=#1D2021
+palette = 0=#000000
 palette = 1=#FB4934
 palette = 2=#B8BB26
 palette = 3=#FABD2F
@@ -14,7 +15,7 @@ palette = 12=#83A598
 palette = 13=#D3869B
 palette = 14=#8EC07C
 palette = 15=#D4BE98
-background = #1D2021
+background = #000000
 foreground = #D4BE98
 cursor-color = #D4BE98
 selection-invert-fg-bg = true
