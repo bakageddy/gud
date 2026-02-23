@@ -18,7 +18,7 @@ function ColorMe()
 		dim_inactive = false,
 		transparent_mode = false,
 		palette_overrides = {
-			dark0_hard = "#000000",
+			-- dark0_hard = "#000000",
 			-- red = "#ff5f5f",
 			-- bright_red = "#ff5f5f",
 			light1 = "#d4be98",

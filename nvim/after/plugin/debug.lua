@@ -13,8 +13,26 @@ mason_dap.setup {
 	handlers = {},
 }
 
-dap.configurations.java = {
+dap.adapters.codelldb = {
+	type = "server",
+	port = "5451",
+	executable = {
+		command = "/usr/bin/lldb",
+		args = {
+			"--port", "5451"
+		},
+	}
+}
+
+dap.configurations.rust = {
 	{
-		type = 'java'
+		name = "Launch File",
+		type = "codelldb",
+		request = "launch",
+		program = function ()
+			return vim.fn.input("Path to executable: ", vim.fn.getcwd() .. '/', "file")
+		end,
+		stopOnEntry = false,
+
 	}
 }

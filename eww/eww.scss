@@ -4,7 +4,7 @@
 
 .bar, .horizontal {
   opacity: 0.99;
-  border-radius: 1.2rem;
+  /* border-radius: 1.2rem; */
   background-color: rgba($color: #000000, $alpha: 0.99);
   /* background-color: rgba($color: #1D2021, $alpha: 0.99); */
   /* background-color: rgba($color: #191724, $alpha: 0.99); */
@@ -15,9 +15,11 @@
 }
 
 .bar {
+  padding: 0;
   border: solid;
-  border-color: #fabd2f;
-  border-width: 2px;
+  border-bottom-width: 2px;
+  border-bottom-style: solid;
+  border-bottom-color: #bbbbbb;
 }
 
 .common {

@@ -127,7 +127,7 @@ output "Samsung Electric Company SAMSUNG 0x01000E00" {
 
 output "LG Electronics LG ULTRAGEAR 502NTJJ6N108" {
 	mode "1920x1080@179.961"
-	scale 1.0
+	scale 1
 	position x=1920 y=0
 }
 
@@ -299,7 +299,7 @@ layout {
 spawn-at-startup "/home/dinesh-24010/Software/xwayland-satellite/target/release/xwayland-satellite"
 spawn-at-startup "/home/dinesh-24010/Software/swww/target/release/swww-daemon"
 // spawn-at-startup "/home/dinesh-24010/Software/swww/target/release/swww" "img" "/home/dinesh-24010/Pictures/walls/gruvbox/gruvboxAstro.jpg"
-spawn-at-startup "/home/dinesh-24010/Software/eww/target/release/eww" "open" "horizontal-bar"
+// spawn-at-startup "/home/dinesh-24010/Software/eww/target/release/eww" "open" "horizontal-bar"
 spawn-at-startup "foot" "-s"
 spawn-at-startup "emacs" "--daemon"
 spawn-at-startup "dunst"

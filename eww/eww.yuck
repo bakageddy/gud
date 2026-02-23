@@ -54,9 +54,9 @@
 
 (defwindow bar
 	:monitor '[0, 1]'
-	:geometry (geometry :x "0.5%"
+	:geometry (geometry :x "0.0%"
 					   :y "0%"
-					   :height "97%"
+					   :height "100%"
 					   :width "2%"
 					   :anchor "center left")
 	:exclusive true
