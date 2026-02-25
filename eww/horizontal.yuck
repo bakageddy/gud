@@ -19,9 +19,9 @@
 
 
 (defwidget time[]
-	(box :orientation "h" :space-evenly false :class "common time" 
+	(box :orientation "v" :space-evenly false :class "common time" 
 		(box (label :class "time__hours" :text "${hours}"))
-		(box (label :class "time__separator" :text ":"))
+		;; (box (label :class "time__separator" :text ":"))
 		(box (label :class "time__minutes" :text "${minutes}"))))
 
 (defwidget sound[]

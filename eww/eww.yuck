@@ -29,7 +29,7 @@
 		(box :orientation "v"
 		(revealer :transistion "slidedown" :reveal power_reveal :label "BAT"
 			(label :class "battery__perc" :text "${battery_total}%"))
-		(label :text "BAT"))))
+		(label :class "battery__logo" :text ""))))
 
 ;; (defwidget circular_battery[]
 ;; 	(circular-progress :value battery_total :thickness 20.0 :start-at 0 :clockwise true))
@@ -43,7 +43,7 @@
 
 (defwidget bottom[]
 	(box :vexpand "true" :valign "end" :orientation "v" :space-evenly false :class "bottom"
-		;; (battery)
+		(battery)
 		(time)))
 
 (defwidget bar[]
