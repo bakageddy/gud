@@ -70,3 +70,33 @@
   color: #FABD2F;
   /* color: #EBBCBA; */
 }
+
+.bigtime {
+  opacity: 0.99;
+  margin: 4rem;
+}
+
+.timeblock {
+  color: #1d2021;
+  font-family: "Iosevka NFM";
+  font-weight: bolder;
+  background-color: #83A598;
+  border-radius: 0.4rem;
+  padding: 1.8rem;
+
+  border-width: 4px;
+  border-color: #1D2021;
+  border-style: solid;
+
+  box-shadow: 20px 20px #151515;
+}
+
+
+.time-number {
+  font-size: 4rem;
+}
+
+.separator {
+  font-size: 4rem;
+  color: #151515;
+}

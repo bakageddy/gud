@@ -1,3 +1,4 @@
+(include 'hugetime.yuck')
 (include 'horizontal.yuck')
 
 ;; (defpoll hours
@@ -58,6 +59,6 @@
 					   :y "0%"
 					   :height "100%"
 					   :width "2%"
-					   :anchor "center left")
+					   :anchor "center right")
 	:exclusive true
 	(bar))

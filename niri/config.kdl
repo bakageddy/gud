@@ -126,9 +126,11 @@ output "Samsung Electric Company SAMSUNG 0x01000E00" {
 }
 
 output "LG Electronics LG ULTRAGEAR 502NTJJ6N108" {
-	mode "1920x1080@179.961"
+	// mode "1920x1080@179.961"
+	mode "2560x1440@74.971"
 	scale 1
 	position x=1920 y=0
+	transform "90"
 }
 
 output "LG Electronics LG ULTRAFINE 506NTABHK400" {
@@ -192,7 +194,7 @@ layout {
         // off
 
         // How many logical pixels the ring extends out from the windows.
-        width 2
+        width 0
 
         // Colors can be set in a variety of ways:
         // - CSS named colors: "red"
@@ -200,8 +202,8 @@ layout {
         // - CSS-like notation: "rgb(255, 127, 0)", rgba(), hsl() and a few others.
 
         // Color of the ring on the active monitor.
-        active-color "#83A598"
-        inactive-color "#505050"
+        // active-color "#83A598"
+        // inactive-color "#505050"
 
         // You can also use gradients. They take precedence over solid colors.
         // Gradients are rendered the same as CSS linear-gradient(angle, from, to).
@@ -297,12 +299,13 @@ layout {
 
 // This line starts waybar, a commonly used bar for Wayland compositors.
 spawn-at-startup "/home/dinesh-24010/Software/xwayland-satellite/target/release/xwayland-satellite"
-spawn-at-startup "/home/dinesh-24010/Software/swww/target/release/swww-daemon"
-// spawn-at-startup "/home/dinesh-24010/Software/swww/target/release/swww" "img" "/home/dinesh-24010/Pictures/walls/gruvbox/gruvboxAstro.jpg"
-// spawn-at-startup "/home/dinesh-24010/Software/eww/target/release/eww" "open" "horizontal-bar"
+spawn-at-startup "/home/dinesh-24010/Software/awww/target/release/awww-daemon"
+spawn-at-startup "/home/dinesh-24010/Software/awww/target/release/awww" "img" "/home/dinesh-24010/.config/wallpapers/gruvbox/gruvboxAstro.jpg"
 spawn-at-startup "foot" "-s"
 spawn-at-startup "emacs" "--daemon"
 spawn-at-startup "dunst"
+spawn-at-startup "mpd"
+spawn-at-startup "mpDris2"
 
 // Uncomment this line to ask the clients to omit their client-side decorations if possible.
 // If the client will specifically ask for CSD, the request will be honored.
@@ -401,16 +404,16 @@ binds {
     Mod+Shift+Return hotkey-overlay-title="Open a Terminal: ghostty" { spawn "ghostty"; }
     Mod+P hotkey-overlay-title="Run an Application: fuzzel" { spawn "fuzzel"; }
     // Mod+Shift+B hotkey-overlay-title="Run Browser: firefox" { spawn "/home/dinesh-24010/Software/firefox/mach" "run"; }
-    Mod+Shift+B hotkey-overlay-title="Run Browser: zen" { spawn "zen"; }
+    Mod+Shift+B hotkey-overlay-title="Run Browser: zen" { spawn "/home/dinesh-24010/Software/zen/zen/zen"; }
 	// Mod+Shift+Y hotkey-overlay-title="Lock the Screen: swaylock"{ spawn "swaylock";}
-	Mod+Insert hotkey-overlay-title="Music: prev" {spawn "mpc" "prev";}
-	Mod+Delete hotkey-overlay-title="Music: next" {spawn "mpc" "next";}
-	Mod+Shift+Insert hotkey-overlay-title="Music: toggle" {spawn "mpc" "toggle";}
+	Mod+Insert hotkey-overlay-title="Music: prev" {spawn "playerctl" "previous";}
+	Mod+Delete hotkey-overlay-title="Music: next" {spawn "playerctl" "next";}
+	Mod+Shift+Insert hotkey-overlay-title="Music: toggle" {spawn "playerctl" "play-pause";}
 
-	XF86AudioNext allow-when-locked=true { spawn "mpc" "next"; }
-	XF86AudioPrev allow-when-locked=true { spawn "mpc" "prev"; }
-	XF86AudioPlay allow-when-locked=true { spawn "mpc" "play"; }
-	XF86AudioStop allow-when-locked=true { spawn "mpc" "pause"; }
+	XF86AudioNext allow-when-locked=true { spawn "playerctl" "-a" "next"; }
+	XF86AudioPrev allow-when-locked=true { spawn "playerctl" "-a" "previous"; }
+	XF86AudioPlay allow-when-locked=true { spawn "playerctl" "-a" "play"; }
+	XF86AudioStop allow-when-locked=true { spawn "playerctl" "-a" "pause"; }
 
 	// You can also use a shell. Do this if you need pipes, multiple commands, etc.
     // Note: the entire command goes as a single argument in the end.

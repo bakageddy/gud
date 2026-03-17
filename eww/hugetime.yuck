@@ -1,0 +1,60 @@
+(defpoll hugehours
+	:interval "60s"
+	:initial "initial-value"
+	`date +%H`
+)
+
+(defpoll hugeminutes
+	:interval "60s"
+	:initial "initial-value"
+	`date +%M`
+)
+
+(defpoll hugeseconds
+	:interval "1s"
+	:initial "initial-value"
+	`date +%S`
+)
+
+(defwindow hugetime
+  :monitor 0
+  :geometry (geometry :x "30%" :y "1%"
+                      :width "350px" :height "120px"
+                      :anchor "top left")
+  :stacking "bg"
+  :exclusive false
+  ;; (bigtime-widget)
+	(box :class "bigtime" :orientation "h" :halign "start" :spacing 20 
+		(hour-block) 
+		(label :class "separator" :text ":")
+		(minute-block)
+		(label :class "separator" :text ":")
+		(second-block)
+	))
+
+
+(defwidget hour-block []
+  (box :class "timeblock"
+       :orientation "v"
+       :halign "center"
+       :valign "center"
+       (label :class "time-number"
+              :text "${hugehours}")))
+
+(defwidget minute-block []
+  (box :class "timeblock"
+       :orientation "v"
+       :halign "center"
+       :valign "center"
+       (label :class "time-number"
+              :text "${hugeminutes}")))
+
+(defwidget second-block []
+  (box :class "timeblock"
+       :orientation "v"
+       :halign "center"
+       :valign "center"
+       (label :class "time-number"
+              :text "${hugeseconds}")))
+
+

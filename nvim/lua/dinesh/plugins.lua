@@ -149,7 +149,7 @@ return require('packer').startup(function(use)
 
     -- Colorscheme
     use 'ellisonleao/gruvbox.nvim'
-	-- use 'eddyekofo94/gruvbox-flat.nvim'
+	use 'arcticicestudio/nord-vim'
     use 'miikanissi/modus-themes.nvim'
     use 'craftzdog/solarized-osaka.nvim'
     use 'webhooked/kanso.nvim'
