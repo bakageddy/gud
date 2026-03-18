@@ -26,9 +26,9 @@ vim.opt.softtabstop = 4
 vim.opt.shiftwidth = 4
 vim.opt.scrolloff = 15
 vim.opt.sidescrolloff = 15
-vim.g.colorcolumn=80
+vim.g.colorcolumn = 80
 
 vim.wo.wrap = false
+vim.o.laststatus = 3
 vim.cmd [[set t_Co=256]]
 vim.cmd [[let g:omni_sql_default_compl_type = 'syntax']]
-vim.cmd [[let g:tpipeline_autoembed = 0]]

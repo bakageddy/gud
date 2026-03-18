@@ -225,7 +225,6 @@ bufferline.setup({
 })
 
 lualine.setup(config)
-vim.opt.laststatus = 3
 
 -- lualine.setup {
 -- 	theme = 'auto'

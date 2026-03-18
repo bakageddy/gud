@@ -8,7 +8,7 @@ return require('packer').startup(function(use)
     -- Tmux
     use 'tmux-plugins/vim-tmux'
     use 'jedrzejboczar/possession.nvim'
-	use 'vimpostor/vim-tpipeline'
+	-- use 'vimpostor/vim-tpipeline'
 	use 'jlfwong/vim-mercenary'
 
     -- Git
