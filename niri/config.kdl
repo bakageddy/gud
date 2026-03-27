@@ -130,13 +130,13 @@ output "LG Electronics LG ULTRAGEAR 502NTJJ6N108" {
 	// mode "2560x1440@74.971"
 	scale 1
 	position x=1920 y=0
-	transform "90"
+	// transform "90"
 }
 
 output "LG Electronics LG ULTRAFINE 506NTABHK400" {
 	scale 1.0
 	position x=-1920 y=0
-	transform "90"
+	// transform "90"
 	// position x=0 y=-2160
 }
 

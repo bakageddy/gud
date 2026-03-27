@@ -36,8 +36,8 @@ window-decoration = none
 window-theme = ghostty
 window-padding-x = 30
 window-padding-y = 30
-# theme = kanso-pearl
-theme = gruvbox
+theme = modus
+# theme = gruvbox
 selection-invert-fg-bg = true
 
 keybind = ctrl+a>n=new_window
