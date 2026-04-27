@@ -1,10 +1,11 @@
+vim.pack.add({'https://github.com/nvim-lualine/lualine.nvim'})
+
 local lualine = require 'lualine'
-local bufferline = require 'bufferline'
-local themes = require 'dinesh.themes'
+local themes = require 'themes'
 
 -- Color table for highlights
 -- stylua: ignore
-local colors = themes.vivendi
+local colors = themes.gruvbox
 -- local colors = themes.grayscale_dark
 
 local conditions = {
@@ -217,15 +218,4 @@ ins_right {
 	padding = { left = 1 },
 }
 
-bufferline.setup({
-	options = {
-		style_preset = bufferline.style_preset.no_bold,
-		separator_style = 'slant'
-	}
-})
-
 lualine.setup(config)
-
--- lualine.setup {
--- 	theme = 'auto'
--- }

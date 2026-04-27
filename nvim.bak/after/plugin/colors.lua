@@ -90,9 +90,9 @@ function ColorMe()
 	-- }
 
 	-- vim.o.background = 'light'
-	vim.g.gruvbox_flat_style = "hard"
-	-- vim.cmd.colorscheme [[gruvbox]]
-	vim.cmd.colorscheme [[modus_vivendi]]
+	-- vim.g.gruvbox_flat_style = "hard"
+	vim.cmd.colorscheme [[gruvbox]]
+	-- vim.cmd.colorscheme [[modus_vivendi]]
 
 	vim.api.nvim_set_hl(0, "Visual", {
 		reverse = true,

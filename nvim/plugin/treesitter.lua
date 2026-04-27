@@ -1,8 +1,21 @@
-local context = require("treesitter-context")
-context.setup {
-	enable = true,
-}
-require 'nvim-treesitter.configs'.setup {
+vim.pack.add({
+	{
+		src = 'https://github.com/nvim-treesitter/nvim-treesitter',
+		branch = "main",
+		build = ":TSUpdate",
+	},
+	'https://github.com/windwp/nvim-autopairs',
+})
+
+vim.api.nvim_create_autocmd("PackChanged", { callback = function (ev) 
+	local name, kind = ev.data.spec.name, ev.data.kind
+	if name == 'nvim-treesitter' and (kind == 'update' or kind == 'add') then
+		-- if not ev.data.active then vim.cmd.packadd('nvim-treesitter') end
+		vim.cmd("TSUpdate")
+	end
+end })
+
+require('nvim-treesitter').setup {
 	ensure_installed = { "rust", "go", "c", "lua", "vim", "cpp" },
 	ignore_install = { "" },
 	modules = {},
@@ -68,7 +81,3 @@ require 'nvim-treesitter.configs'.setup {
 		},
 	}
 }
-
-vim.keymap.set("n", "[c", function() context.go_to_context() end, { silent = true });
-vim.keymap.set("n", "<leader>tt", "<CMD>TSBufToggle highlight<CR>", { silent = true })
-vim.keymap.set("n", "<leader>tu", "<CMD>TSCaptureUnderCursor<CR>", { silent = true })

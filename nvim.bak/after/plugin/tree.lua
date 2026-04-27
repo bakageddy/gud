@@ -4,7 +4,8 @@ neotree.setup {
 	window = {
 		width = 25,
 		height = 15
-	}
+	},
+	dotfiles = true,
 }
 
 vim.api.nvim_create_autocmd(

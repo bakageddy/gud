@@ -1,0 +1,17 @@
+vim.pack.add({"https://github.com/nvim-lua/plenary.nvim"})
+local packadd = function (module)
+	vim.cmd("packadd " .. module)
+end
+packadd("plenary.nvim")
+
+-- require("plugins.gruvbox")
+-- require("plugins.statusline")
+-- require("plugins.tree")
+-- require("plugins.term")
+-- require("plugins.mini")
+-- require("plugins.todo")
+-- require("plugins.colorizer")
+-- require("plugins.telescope")
+-- require("plugins.treesitter")
+-- require("plugins.lsp")
+-- require("plugins.git")
