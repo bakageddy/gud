@@ -304,8 +304,8 @@ spawn-at-startup "/home/dinesh-24010/Software/awww/target/release/awww" "img" "/
 spawn-at-startup "foot" "-s"
 spawn-at-startup "emacs" "--daemon"
 spawn-at-startup "dunst"
-spawn-at-startup "mpd"
 spawn-at-startup "mpDris2"
+// spawn-at-startup "mpd"
 
 // Uncomment this line to ask the clients to omit their client-side decorations if possible.
 // If the client will specifically ask for CSD, the request will be honored.
@@ -330,7 +330,7 @@ animations {
     // off
 
     // Slow down all animations by this factor. Values below 1 speed them up instead.
-    slowdown 0.8
+    slowdown 1.0
 }
 
 // Window rules let you adjust behavior for individual windows.
@@ -406,14 +406,14 @@ binds {
     // Mod+Shift+B hotkey-overlay-title="Run Browser: firefox" { spawn "/home/dinesh-24010/Software/firefox/mach" "run"; }
     Mod+Shift+B hotkey-overlay-title="Run Browser: zen" { spawn "/home/dinesh-24010/Software/zen/zen/zen"; }
 	// Mod+Shift+Y hotkey-overlay-title="Lock the Screen: swaylock"{ spawn "swaylock";}
-	Mod+Insert hotkey-overlay-title="Music: prev" {spawn "playerctl" "previous";}
-	Mod+Delete hotkey-overlay-title="Music: next" {spawn "playerctl" "next";}
-	Mod+Shift+Insert hotkey-overlay-title="Music: toggle" {spawn "playerctl" "play-pause";}
+	Mod+Home hotkey-overlay-title="Music: prev" {spawn "playerctl" "previous";}
+	Mod+End hotkey-overlay-title="Music: next" {spawn "playerctl" "next";}
+	Mod+Shift+Home hotkey-overlay-title="Music: toggle" {spawn "playerctl" "play-pause";}
 
-	XF86AudioNext allow-when-locked=true { spawn "playerctl" "-a" "next"; }
-	XF86AudioPrev allow-when-locked=true { spawn "playerctl" "-a" "previous"; }
-	XF86AudioPlay allow-when-locked=true { spawn "playerctl" "-a" "play"; }
-	XF86AudioStop allow-when-locked=true { spawn "playerctl" "-a" "pause"; }
+	XF86AudioNext allow-when-locked=true { spawn "playerctl" "next"; }
+	XF86AudioPrev allow-when-locked=true { spawn "playerctl" "previous"; }
+	XF86AudioPlay allow-when-locked=true { spawn "playerctl" "play"; }
+	XF86AudioStop allow-when-locked=true { spawn "playerctl" "pause"; }
 
 	// You can also use a shell. Do this if you need pipes, multiple commands, etc.
     // Note: the entire command goes as a single argument in the end.
@@ -464,8 +464,8 @@ binds {
     // Mod+Ctrl+J     { move-window-down-or-to-workspace-down; }
     // Mod+Ctrl+K     { move-window-up-or-to-workspace-up; }
 
-    Mod+Home { focus-column-first; }
-    Mod+End  { focus-column-last; }
+    // Mod+Home { focus-column-first; }
+    // Mod+End  { focus-column-last; }
     Mod+Ctrl+Home { move-column-to-first; }
     Mod+Ctrl+End  { move-column-to-last; }
 

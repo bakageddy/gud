@@ -3,12 +3,15 @@ vim.pack.add({
 	{src = "https://github.com/saghen/blink.cmp", version = vim.version.range("1.*")},
 	"https://github.com/mason-org/mason.nvim",
 	"https://github.com/mason-org/mason-lspconfig.nvim",
-	'https://github.com/L3MON4D3/LuaSnip'
+	"https://github.com/L3MON4D3/LuaSnip",
+	"https://github.com/folke/lazydev.nvim"
+
 })
 
 local lspconfig = require("lspconfig")
 local cmp = require("blink.cmp")
 local lsp_capbl = cmp.get_lsp_capabilities()
+local _ = require("lazydev").setup()
 
 
 cmp.setup({
@@ -19,6 +22,7 @@ cmp.setup({
 		['<C-n>'] = {'select_next', 'fallback'},
 		['<C-p>'] = {'select_prev', 'fallback'},
 		['<C-d>'] = {'snippet_forward', 'fallback'},
+		['<C-s>'] = {'snippet_backward', 'fallback'},
 		['K'] = {'show_signature', 'fallback'},
 	},
 	appearance = {

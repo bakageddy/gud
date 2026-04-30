@@ -4,11 +4,10 @@ waves = 1
 
 [color]
 gradient = 1
-gradient_count = 7
-gradient_color_1 = '#D3869B'
-gradient_color_2 = '#83A598'
-gradient_color_3 = '#8EC07C'
-gradient_color_4 = '#B8BB26'
-gradient_color_5 = '#FABD2F'
-gradient_color_6 = '#FE8019'
-gradient_color_7 = '#FF5F5F'
+gradient_count = 6
+gradient_color_1 = '#ff66ff'
+gradient_color_2 = '#feacd0'
+gradient_color_3 = '#ff5f5f'
+gradient_color_4 = '#ff9580'
+gradient_color_5 = '#d0bc00'
+gradient_color_6 = '#44bc44'
