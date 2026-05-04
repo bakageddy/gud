@@ -58,3 +58,5 @@ vim.o.redrawtime = 10000
 
 vim.g.mapleader = " "
 vim.g.maplocalleader = " "
+
+vim.cmd [[let g:omni_sql_default_compl_type = 'syntax']]
