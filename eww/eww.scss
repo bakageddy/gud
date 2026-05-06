@@ -78,7 +78,8 @@
 
 .timeblock {
   color: #1d2021;
-  font-family: "Iosevka NFM";
+  // font-family: "Iosevka NFM";
+  font-family: "RobotoMono Nerd Font Mono";
   font-weight: bolder;
   background-color: #83A598;
   border-radius: 0.4rem;
@@ -94,6 +95,19 @@
 
 .time-number {
   font-size: 4rem;
+}
+
+
+.hourblock {
+  background-color: #FABD2F;
+}
+
+.minuteblock {
+  background-color: #fb4934;
+}
+
+.secondblock {
+  background-color: #FE8019;
 }
 
 .separator {

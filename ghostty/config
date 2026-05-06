@@ -3,11 +3,6 @@
 # font-style-bold-italic = IosevkaTerm NFM Bold
 # font-style-italic = IosevkaTerm NFM Medium
 
-font-family = RobotoMono Nerd Font Mono
-font-family-bold = RobotoMono Nerd Font Mono
-font-family-italic = RobotoMono Nerd Font Mono
-font-family-bold-italic = RobotoMono Nerd Font Mono
-
 # font-family = SF Mono
 # font-family-bold = SF Mono
 # font-family-italic = SF Mono
@@ -15,10 +10,15 @@ font-family-bold-italic = RobotoMono Nerd Font Mono
 
 # font-family=GTPressuraMono
 
-# font-family = Berkeley Mono
-# font-style-bold = false
-# font-style-bold-italic = false
-# font-style-italic = false
+# font-family = RobotoMono Nerd Font Mono Bld
+# font-family-bold = RobotoMono Nerd Font Mono Bld
+# font-family-italic = RobotoMono Nerd Font Mono Bld
+# font-family-bold-italic = RobotoMono Nerd Font Mono Bld
+
+font-family = Berkeley Mono
+font-style-bold = Berkeley Mono
+font-style-bold-italic = Berkeley Mono
+font-style-italic = Berkeley Mono
 
 # font-family = CommitMono
 # font-style-bold = CommitMono Bold

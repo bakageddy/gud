@@ -34,7 +34,7 @@
 
 
 (defwidget hour-block []
-  (box :class "timeblock"
+  (box :class "timeblock hourblock"
        :orientation "v"
        :halign "center"
        :valign "center"
@@ -42,7 +42,7 @@
               :text "${hugehours}")))
 
 (defwidget minute-block []
-  (box :class "timeblock"
+  (box :class "timeblock minuteblock"
        :orientation "v"
        :halign "center"
        :valign "center"
@@ -50,7 +50,7 @@
               :text "${hugeminutes}")))
 
 (defwidget second-block []
-  (box :class "timeblock"
+  (box :class "timeblock secondblock"
        :orientation "v"
        :halign "center"
        :valign "center"
