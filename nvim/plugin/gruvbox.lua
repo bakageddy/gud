@@ -6,7 +6,15 @@ local gruvbox = require 'gruvbox'
 gruvbox.setup {
 	terminal_colors = false,
 	invert_selection = true,
+	invert_tabline = true,
 	contrast = "hard",
+	italic = {
+		strings = false,
+		emphasis = false,
+		comments = false,
+		operators = false,
+		folds = false,
+	},
 	dim_inactive = false,
 	transparent_mode = false,
 	palette_overrides = {
@@ -30,9 +38,12 @@ gruvbox.setup {
 		["@namespace"] = { link = "@module" },
 		["@keyword"] = { fg = gruvbox.palette.bright_red, italic = true },
 		IndentLine = { link = "Comment", bold = true },
-		IndentLineCurrent = {fg = gruvbox.palette.light1},
+		IndentLineCurrent = { fg = gruvbox.palette.light1 },
 		["@keyword.type"] = { link = "Structure" },
 		["@type.builtin"] = { link = "Special" },
+		TabLineFill = { link = "Normal" },
+		MiniTablineVisible = { link = "Normal" },
+		MiniTablineHidden = { link = "Normal" },
 	}
 }
 vim.cmd.colorscheme [[gruvbox]]
