@@ -7,16 +7,27 @@ vim.pack.add({
 	'https://github.com/windwp/nvim-autopairs',
 })
 
-vim.api.nvim_create_autocmd("PackChanged", { callback = function (ev) 
-	local name, kind = ev.data.spec.name, ev.data.kind
-	if name == 'nvim-treesitter' and (kind == 'update' or kind == 'add') then
-		-- if not ev.data.active then vim.cmd.packadd('nvim-treesitter') end
-		vim.cmd("TSUpdate")
+vim.api.nvim_create_autocmd("PackChanged", {
+	callback = function(ev)
+		local name, kind = ev.data.spec.name, ev.data.kind
+		if name == 'nvim-treesitter' and (kind == 'update' or kind == 'add') then
+			-- if not ev.data.active then vim.cmd.packadd('nvim-treesitter') end
+			vim.cmd("TSUpdate")
+		end
 	end
-end })
+})
+
+local ensure_installed = { "rust", "go", "c", "lua", "vim", "cpp", "sql", "markdown", "bash" }
+
+vim.api.nvim_create_autocmd('FileType', {
+	pattern = ensure_installed,
+	callback = function()
+		vim.treesitter.start()
+	end
+})
 
 require('nvim-treesitter').setup {
-	ensure_installed = { "rust", "go", "c", "lua", "vim", "cpp" },
+	ensure_installed = ensure_installed,
 	ignore_install = { "" },
 	modules = {},
 	sync_install = false,

@@ -13,9 +13,10 @@ vim.o.undofile = true
 vim.o.undodir = undodir
 
 -- appearance
+vim.o.colorcolumn = "80"
 vim.o.wrap = false
-vim.o.number = true
-vim.o.relativenumber = true
+-- vim.o.number = true
+-- vim.o.relativenumber = true
 vim.o.scrolloff = 10
 vim.o.sidescrolloff = 10
 vim.o.cmdheight = 1

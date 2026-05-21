@@ -97,7 +97,3 @@ vim.diagnostic.config({
 		},
 	},
 })
-
-
-vim.keymap.set("n", "[e", function() vim.diagnostic.goto_next() end, opts)
-vim.keymap.set("n", "]e", function() vim.diagnostic.goto_next() end, opts)
