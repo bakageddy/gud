@@ -11,7 +11,7 @@
 			inputs.nixpkgs.follows = "nixpkgs";
 		};
 	};
-	outputs = { self, nixpkgs, home-manager }:
+	outputs = { self, nixpkgs, home-manager, zen-browser }:
 	let 
 		pkgs = nixpkgs.legacyPackages.x86_64-linux;
 		username = "dinesh-24010";

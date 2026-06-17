@@ -464,7 +464,7 @@ binds {
     Mod+Shift+Return hotkey-overlay-title="Open a Terminal: wezterm" { spawn "wezterm" "connect" "unix"; }
 	Mod+Ctrl+Return hotkey-overlay-title="Open a Terminal: ghostty" { spawn "ghostty" "+new-window"; }
     Mod+P hotkey-overlay-title="Run an Application" { spawn "noctalia" "msg" "panel-toggle" "launcher"; }
-    Mod+Shift+B hotkey-overlay-title="Run Browser: zen" { spawn "/home/dinesh-24010/Software/AppImages/zen_browser.appimage"; }
+    Mod+Shift+B hotkey-overlay-title="Run Browser: zen" { spawn "/home/dinesh-24010/.nix-profile/bin/zen"; }
 	// Mod+Shift+Y hotkey-overlay-title="Lock the Screen: gdm3"{ spawn "loginctl" "lock-session"; }
 	Mod+Home hotkey-overlay-title="Music: prev" {spawn "playerctl" "previous";}
 	Mod+End hotkey-overlay-title="Music: next" {spawn "playerctl" "next";}
