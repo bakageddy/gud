@@ -8,6 +8,7 @@ vim.g.loaded_netrwPlugin = 1
 
 local neotree = require('neo-tree')
 neotree.setup {
+	icons = true,
 	window = {
 		width = 25,
 		height = 15

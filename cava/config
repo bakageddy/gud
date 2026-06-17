@@ -3,6 +3,7 @@ monstercat = 1
 waves = 1
 
 [color]
+theme = "noctalia"
 gradient = 1
 gradient_count = 6
 gradient_color_1 = '#ff66ff'

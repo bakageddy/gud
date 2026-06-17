@@ -1,6 +1,6 @@
 vim.pack.add({
 	"https://github.com/neovim/nvim-lspconfig",
-	{src = "https://github.com/saghen/blink.cmp", version = vim.version.range("1.*")},
+	{ src = "https://github.com/saghen/blink.cmp", version = vim.version.range("1.*") },
 	"https://github.com/mason-org/mason.nvim",
 	"https://github.com/mason-org/mason-lspconfig.nvim",
 	"https://github.com/L3MON4D3/LuaSnip",
@@ -17,13 +17,13 @@ local _ = require("lazydev").setup()
 cmp.setup({
 	keymap = {
 		preset = 'none',
-		['<C-space>'] = {'show', 'show_documentation', 'hide_documentation'},
-		['<C-y>'] = {'select_and_accept'},
-		['<C-n>'] = {'select_next', 'fallback'},
-		['<C-p>'] = {'select_prev', 'fallback'},
-		['<C-d>'] = {'snippet_forward', 'fallback'},
-		['<C-s>'] = {'snippet_backward', 'fallback'},
-		['K'] = {'show_signature', 'fallback'},
+		['<C-space>'] = { 'show', 'show_documentation', 'hide_documentation' },
+		['<C-y>'] = { 'select_and_accept' },
+		['<C-n>'] = { 'select_next', 'fallback' },
+		['<C-p>'] = { 'select_prev', 'fallback' },
+		['<C-d>'] = { 'snippet_forward', 'fallback' },
+		['<C-s>'] = { 'snippet_backward', 'fallback' },
+		['K'] = { 'show_signature', 'fallback' },
 	},
 	appearance = {
 		nerd_font_variant = 'mono',
@@ -32,7 +32,7 @@ cmp.setup({
 		documentation = { auto_show = true, auto_show_delay_ms = 500 }
 	},
 	sources = {
-		default = {'lsp', 'buffer', 'path', 'snippets', 'omni'}
+		default = { 'lsp', 'buffer', 'path', 'snippets', 'omni' }
 	},
 	snippets = {
 		preset = 'luasnip'

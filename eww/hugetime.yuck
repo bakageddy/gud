@@ -18,12 +18,9 @@
 
 (defwindow hugetime
   :monitor 0
-  :geometry (geometry :x "30%" :y "1%"
-                      :width "350px" :height "120px"
-                      :anchor "top left")
+  :geometry (geometry :anchor "top center")
   :stacking "bg"
   :exclusive false
-  ;; (bigtime-widget)
 	(box :class "bigtime" :orientation "h" :halign "start" :spacing 20 
 		(hour-block) 
 		(label :class "separator" :text ":")

@@ -23,8 +23,8 @@ vim.o.cmdheight = 1
 vim.o.showmode = false
 vim.o.laststatus = 3
 
-vim.o.updatetime = 5000
-vim.o.timeoutlen = 500
+-- vim.o.updatetime = 5000
+-- vim.o.timeoutlen = 500
 vim.o.autoread = true
 vim.o.autowrite = false
 vim.o.errorbells = false

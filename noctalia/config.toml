@@ -1,0 +1,72 @@
+[shell]
+niri_overview_type_to_launch_enabled = true
+font_family = "SF Mono"
+
+[location]
+auto_locate = false
+address = "Chennai, India"
+
+[weather]
+enabled = true
+
+[notification]
+enable_daemon = true
+
+[control_center]
+sidebar = "full"
+sidebar_section = "compact"
+
+[dock]
+enabled = true
+position = "bottom"
+auto_hide = true
+reserve_space = false
+show_running = true
+pinned = ["ghostty", "com.discordapp.Discord", "zen"]
+
+[wallpaper]
+enabled = true
+transistion_duration = 1500
+transistion_on_startup = true
+directory = "/home/dinesh-24010/.config/wallpapers"
+
+[wallpaper.automation]
+enabled = false
+interval_seconds = 360
+order = "random"
+recursive = true
+
+[backdrop]
+enabled = true
+blur_intensity = 0.3
+
+[bar]
+order = ["main"]
+
+[bar.main]
+position = "bottom"
+enabled = true
+auto_hide = false
+reserve_space = true
+layer = "top"
+font_weight = "bold"
+font_family = "SF Mono Medium"
+
+padding = 28
+margin_ends = 0
+margin_edge = 0
+
+radius_top_left = -32
+radius_top_right = -32
+radius_bottom_left = -32
+radius_bottom_right = -32
+
+start = ["launcher", "workspaces"]
+center = ["clock"]
+end = ["weather", "bluetooth", "volume", "brightness", "network", "battery"]
+
+[widget.launcher]
+glyph = "brand-apple-filled"
+
+[widget.workspaces]
+minimal = true

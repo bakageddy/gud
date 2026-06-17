@@ -1,6 +1,21 @@
-vim.pack.add({'https://github.com/nvim-mini/mini.nvim'})
+vim.pack.add({ 'https://github.com/nvim-mini/mini.nvim' })
 
 local _ = require 'mini.tabline'.setup()
 local _ = require 'mini.icons'.setup()
 local _ = require 'mini.comment'.setup()
 local _ = require 'mini.pairs'.setup()
+local _ = require 'mini.git'.setup()
+local _ = require 'mini.diff'.setup {
+	view = {
+		signs = {
+			add = "|",
+			change = "|",
+			delete = "|"
+		}
+	}
+}
+local _ = require 'mini.indentscope'.setup {
+	draw = { delay = 0, animation = function()
+		return 0
+	end }
+}

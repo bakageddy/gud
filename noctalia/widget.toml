@@ -1,0 +1,39 @@
+[desktop_widgets]
+schema_version = 2
+enabled = true
+widget_order = [
+	"weather_main",
+	"media_player_main",
+	"clock_main"
+]
+
+[desktop_widgets.grid]
+enabled = true
+
+[desktop_widgets.widget.weather_main]
+type = "weather"
+box_height = 96.0
+box_width = 368.0
+cx = 1704.0
+cy = 264.0
+
+[desktop_widgets.widget.weather_main.settings]
+color = "on_surface"
+shadow = true
+
+
+[desktop_widgets.widget.media_player_main]
+box_height = 144.0
+box_width = 368.0
+cx = 1704.0
+cy = 400.0
+rotation = 0.0
+type = "media_player"
+
+[desktop_widgets.widget.clock_main]
+box_height = 96.0
+box_width = 368.0
+cx = 1704.0
+cy = 152.0
+rotation = 0.0
+type = "clock"

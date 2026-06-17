@@ -1,24 +1,27 @@
-# font-family = IosevkaTerm NFM Medium
-# font-style-bold = IosevkaTerm NFM Bold
-# font-style-bold-italic = IosevkaTerm NFM Bold
-# font-style-italic = IosevkaTerm NFM Medium
+font-family = IosevkaTerm NFM Medium
+font-style-bold = IosevkaTerm NFM Bold
+font-style-bold-italic = IosevkaTerm NFM Bold
+font-style-italic = IosevkaTerm NFM Medium
+
+# font-family = Maple Mono NF SemiBold
+# font-style-bold = Maple Mono NF SemiBold
+# font-style-bold-italic = Maple Mono NF SemiBold
+# font-style-italic = Maple Mono NF SemiBold
 
 # font-family = SF Mono
 # font-family-bold = SF Mono
 # font-family-italic = SF Mono
 # font-family-bold-italic = SF Mono
 
-# font-family=GTPressuraMono
+# font-family = RobotoMono Nerd Font Mono Md
+# font-family-bold = RobotoMono Nerd Font Mono Md
+# font-family-italic = RobotoMono Nerd Font Mono Md
+# font-family-bold-italic = RobotoMono Nerd Font Mono Md
 
-# font-family = RobotoMono Nerd Font Mono Bld
-# font-family-bold = RobotoMono Nerd Font Mono Bld
-# font-family-italic = RobotoMono Nerd Font Mono Bld
-# font-family-bold-italic = RobotoMono Nerd Font Mono Bld
-
-font-family = Berkeley Mono
-font-style-bold = Berkeley Mono
-font-style-bold-italic = Berkeley Mono
-font-style-italic = Berkeley Mono
+# font-family = Berkeley Mono
+# font-style-bold = Berkeley Mono
+# font-style-bold-italic = Berkeley Mono
+# font-style-italic = Berkeley Mono
 
 # font-family = CommitMono
 # font-style-bold = CommitMono Bold
@@ -30,22 +33,20 @@ font-style-italic = Berkeley Mono
 # font-style-bold-italic = false
 # font-style-italic = false
 # adjust-cell-height = +15%
-background-blur = 10
 
-# font-family = GitLab Mono
-# font-style-bold = GitLab Mono
-# font-style-bold-italic = GitLab Mono
-# font-style-italic = GitLab Mono
+notify-on-command-finish = unfocused
 
-font-size=18
+font-size=16
+# background-blur = 10
 # adjust-cell-width = -6%
 adjust-cell-height = +20%
 # custom-shader = "~/.config/ghostty/shaders/crt.glsl"
 
-window-decoration = none
+window-decoration = server
 window-theme = ghostty
 window-padding-x = 30
 window-padding-y = 30
+# background-opacity = 0.9
 # theme = modus
 theme = gruvbox
 selection-invert-fg-bg = true

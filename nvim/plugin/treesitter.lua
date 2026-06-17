@@ -17,12 +17,18 @@ vim.api.nvim_create_autocmd("PackChanged", {
 	end
 })
 
-local ensure_installed = { "rust", "go", "c", "lua", "vim", "cpp", "sql", "markdown", "bash" }
+local ensure_installed = { "hurl", "yaml", "typescript", "html", "css", "svelte", "python", "java", "rust", "go", "c",
+	"lua",
+	"vim", "cpp", "sql", "markdown", "bash"
+}
 
 vim.api.nvim_create_autocmd('FileType', {
-	pattern = ensure_installed,
+	-- pattern = ensure_installed,
 	callback = function()
-		vim.treesitter.start()
+		if vim.treesitter.get_parser() then
+			vim.treesitter.start()
+		end
+		-- vim.treesitter.start()
 	end
 })
 

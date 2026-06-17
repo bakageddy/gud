@@ -79,7 +79,8 @@
 .timeblock {
   color: #1d2021;
   // font-family: "Iosevka NFM";
-  font-family: "RobotoMono Nerd Font Mono";
+  // font-family: "RobotoMono Nerd Font Mono";
+  font-family: "Maple Mono NF";
   font-weight: bolder;
   background-color: #83A598;
   border-radius: 0.4rem;
@@ -99,15 +100,15 @@
 
 
 .hourblock {
-  background-color: #FABD2F;
+  background-color: #83A598;
 }
 
 .minuteblock {
-  background-color: #fb4934;
+  background-color: #B8BB26;
 }
 
 .secondblock {
-  background-color: #FE8019;
+  background-color: #FABD2F;
 }
 
 .separator {
