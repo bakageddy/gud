@@ -13,26 +13,29 @@
 # font-family-italic = SF Mono
 # font-family-bold-italic = SF Mono
 
-# font-family = RobotoMono Nerd Font Mono Md
-# font-family-bold = RobotoMono Nerd Font Mono Md
-# font-family-italic = RobotoMono Nerd Font Mono Md
-# font-family-bold-italic = RobotoMono Nerd Font Mono Md
+# font-family = RobotoMono Nerd Font Mono
+# font-family-bold = RobotoMono Nerd Font Mono
+# font-family-italic = RobotoMono Nerd Font Mono
+# font-family-bold-italic = RobotoMono Nerd Font Mono
 
-# font-family = Berkeley Mono
-# font-style-bold = Berkeley Mono
-# font-style-bold-italic = Berkeley Mono
-# font-style-italic = Berkeley Mono
+# font-family = Ioskeley Mono
+# font-style-bold = Ioskeley Mono
+# font-style-bold-italic = Ioskeley Mono
+# font-style-italic = Ioskeley Mono
 
 # font-family = CommitMono
 # font-style-bold = CommitMono Bold
 # font-style-bold-italic = CommitMono Bold Italic
 # font-style-italic = CommitMono Italic
 
-font-family = JetBrainsMono NFM
+font-family = JetBrains Mono
+# font-family = Fragment Mono
 font-style-bold = false
 font-style-bold-italic = false
 font-style-italic = false
 adjust-cell-height = +20%
+custom-shader-animation = true
+custom-shader = ./shaders/cursor_smear.glsl
 
 notify-on-command-finish = unfocused
 

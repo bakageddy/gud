@@ -134,7 +134,7 @@ output "LG Electronics LG ULTRAGEAR 502NTJJ6N108" {
 }
 
 output "LG Electronics LG ULTRAFINE 506NTABHK400" {
-	scale 1.0
+	scale 1.5
 	position x=-1920 y=0
 	// transform "90"
 	// position x=0 y=-2160
@@ -153,7 +153,7 @@ layout {
     // - "always", the focused column will always be centered.
     // - "on-overflow", focusing a column will center it if it doesn't fit
     //   together with the previously focused column.
-    center-focused-column "on-overflow"
+    center-focused-column "always"
 
     // You can customize the widths that "switch-preset-column-width" (Mod+R) toggles between.
     preset-column-widths {
@@ -191,10 +191,10 @@ layout {
     // You can change how the focus ring looks.
     focus-ring {
         // Uncomment this line to disable the focus ring.
-        // off
+        off
 
         // How many logical pixels the ring extends out from the windows.
-        width 0
+        // width 2
 
         // Colors can be set in a variety of ways:
         // - CSS named colors: "red"
@@ -273,7 +273,7 @@ layout {
         spread 20
 
         // Offset moves the shadow relative to the window.
-        offset x=0 y=5
+        offset x=10 y=5
 
         // You can also change the shadow color and opacity.
         color "#0007"
@@ -302,9 +302,9 @@ spawn-at-startup "/home/dinesh-24010/Software/xwayland-satellite/target/release/
 spawn-at-startup "noctalia"
 spawn-at-startup "foot" "-s"
 spawn-at-startup "emacs" "--daemon"
-spawn-at-startup "wezterm" "--daemonize" "--cwd" "/home/dinesh-24010"
 spawn-at-startup "mpDris2"
-// spawn-at-startup "mpd"
+spawn-at-startup "mpd"
+spawn-at-startup "mpc pause"
 
 // Uncomment this line to ask the clients to omit their client-side decorations if possible.
 // If the client will specifically ask for CSD, the request will be honored.
@@ -392,7 +392,7 @@ window-rule {
     // You can get away with just app-id="wezterm" if you want.
 	match app-id="foot"
 	match app-id="ghostty"
-	match app-id="wezterm"
+	match app-id="kitty"
 	opacity 0.9
 	background-effect {
 		blur true
@@ -461,14 +461,19 @@ binds {
 
     // Suggested binds for running programs: terminal, app launcher, screen locker.
     Mod+Return hotkey-overlay-title="Open a Terminal: footclient" { spawn "footclient"; }
-    Mod+Shift+Return hotkey-overlay-title="Open a Terminal: wezterm" { spawn "wezterm" "connect" "unix"; }
+    Mod+Shift+Return hotkey-overlay-title="Open a Terminal: kitty" { spawn "kitty"; }
 	Mod+Ctrl+Return hotkey-overlay-title="Open a Terminal: ghostty" { spawn "ghostty" "+new-window"; }
     Mod+P hotkey-overlay-title="Run an Application" { spawn "noctalia" "msg" "panel-toggle" "launcher"; }
     Mod+Shift+B hotkey-overlay-title="Run Browser: zen" { spawn "/home/dinesh-24010/.nix-profile/bin/zen"; }
-	// Mod+Shift+Y hotkey-overlay-title="Lock the Screen: gdm3"{ spawn "loginctl" "lock-session"; }
+
 	Mod+Home hotkey-overlay-title="Music: prev" {spawn "playerctl" "previous";}
 	Mod+End hotkey-overlay-title="Music: next" {spawn "playerctl" "next";}
 	Mod+Shift+Home hotkey-overlay-title="Music: toggle" {spawn "playerctl" "play-pause";}
+
+	Mod+Insert hotkey-overlay-title="Music: prev" {spawn "playerctl" "previous";}
+	Mod+Delete hotkey-overlay-title="Music: next" {spawn "playerctl" "next";}
+	Mod+Shift+Insert hotkey-overlay-title="Music: toggle" {spawn "playerctl" "play-pause";}
+
 	Mod+Shift+W hotkey-overlay-title="Next Wallpaper" { spawn "noctalia" "msg" "wallpaper-random";}
 
 	XF86AudioNext allow-when-locked=true { spawn "playerctl" "next"; }

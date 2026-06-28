@@ -4,14 +4,22 @@ vim.pack.add({
 	"https://github.com/mason-org/mason.nvim",
 	"https://github.com/mason-org/mason-lspconfig.nvim",
 	"https://github.com/L3MON4D3/LuaSnip",
-	"https://github.com/folke/lazydev.nvim"
+	"https://github.com/folke/lazydev.nvim",
 
+	"https://github.com/nvimtools/none-ls.nvim"
 })
 
 local lspconfig = require("lspconfig")
 local cmp = require("blink.cmp")
 local lsp_capbl = cmp.get_lsp_capabilities()
 local _ = require("lazydev").setup()
+local null_ls = require("null-ls")
+
+null_ls.setup({
+	sources = {
+		null_ls.builtins.formatting.prettierd,
+	}
+})
 
 
 cmp.setup({
