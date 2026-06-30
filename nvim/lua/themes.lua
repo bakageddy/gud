@@ -15,7 +15,7 @@ M.dragon = {
 }
 
 M.grayscale_dark = {
-	bg       = '#101010',
+	bg       = '#181818',
 	fg       = '#747474',
 	yellow   = '#a0a0a0',
 	cyan     = '#868686',

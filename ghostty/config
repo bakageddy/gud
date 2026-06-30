@@ -47,7 +47,7 @@ window-padding-x = 30
 window-padding-y = 30
 # background-opacity = 0.9
 # theme = modus
-theme = gruvbox
+theme = mfdflir
 selection-invert-fg-bg = true
 
 keybind = ctrl+a>n=new_window

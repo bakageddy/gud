@@ -1,6 +1,6 @@
 vim.pack.add({
 	'https://github.com/ellisonleao/gruvbox.nvim',
-	'https://github.com/oskarnurm/koda.nvim'
+	'https://github.com/nyoom-engineering/oxocarbon.nvim'
 })
 
 local gruvbox = require 'gruvbox'
@@ -47,4 +47,3 @@ gruvbox.setup {
 		MiniTablineHidden = { link = "Normal" },
 	}
 }
-vim.cmd.colorscheme [[gruvbox]]

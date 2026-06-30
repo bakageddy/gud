@@ -5,8 +5,8 @@ local themes = require 'themes'
 
 -- Color table for highlights
 -- stylua: ignore
-local colors = themes.gruvbox
--- local colors = themes.grayscale_dark
+-- local colors = themes.gruvbox
+local colors = themes.grayscale_dark
 
 local conditions = {
 	buffer_not_empty = function()
