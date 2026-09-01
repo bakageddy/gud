@@ -1,6 +1,5 @@
 vim.pack.add({
 	'https://github.com/ellisonleao/gruvbox.nvim',
-	'https://github.com/nyoom-engineering/oxocarbon.nvim'
 })
 
 local gruvbox = require 'gruvbox'
@@ -45,5 +44,11 @@ gruvbox.setup {
 		TabLineFill = { link = "Normal" },
 		MiniTablineVisible = { link = "Normal" },
 		MiniTablineHidden = { link = "Normal" },
+		DiffText = { fg = gruvbox.palette.dark0_hard, bg = gruvbox.palette.light0 },
+		DiffAdd = { fg = gruvbox.palette.dark0_hard, bg = gruvbox.palette.bright_green },
+		DiffChange = { fg = gruvbox.palette.dark0_hard, bg = gruvbox.palette.bright_yellow },
+		DiffDelete = { fg = gruvbox.palette.dark0_hard, bg = gruvbox.palette.bright_red },
 	}
 }
+
+vim.cmd.colorscheme [[gruvbox]]

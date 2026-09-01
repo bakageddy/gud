@@ -10,6 +10,10 @@
       url = "github:youwen5/zen-browser-flake";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+    nixgl = {
+      url = "github:nix-community/nixGL";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
   };
   outputs =
     {
@@ -17,6 +21,7 @@
       nixpkgs,
       home-manager,
       zen-browser,
+      nixgl,
     }:
     let
       pkgs = nixpkgs.legacyPackages.x86_64-linux;
@@ -26,7 +31,7 @@
     {
       homeConfigurations.${username} = home-manager.lib.homeManagerConfiguration {
         pkgs = nixpkgs.legacyPackages.${system};
-        extraSpecialArgs = { inherit system username zen-browser; };
+        extraSpecialArgs = { inherit system username zen-browser nixgl; };
         modules = [ ./home.nix ];
       };
     };

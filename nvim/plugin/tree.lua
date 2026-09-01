@@ -1,5 +1,5 @@
 vim.pack.add({
-	{ src = "https://github.com/nvim-neo-tree/neo-tree.nvim", branch = "v3.x"},
+	{ src = "https://github.com/nvim-neo-tree/neo-tree.nvim", branch = "v3.x" },
 	"https://github.com/MunifTanjim/nui.nvim",
 })
 
@@ -17,9 +17,11 @@ neotree.setup {
 
 vim.api.nvim_create_autocmd(
 	{ "VimEnter" },
-	{ callback = function (ev)
-		if (vim.fn.isdirectory(ev.file) == 1) then
-			vim.cmd [[Neotree]]
+	{
+		callback = function(ev)
+			if (vim.fn.isdirectory(ev.file) == 1) then
+				vim.cmd [[Neotree]]
+			end
 		end
-	end }
+	}
 )

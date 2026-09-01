@@ -8,9 +8,9 @@ local _ = require 'mini.git'.setup()
 local _ = require 'mini.diff'.setup {
 	view = {
 		signs = {
-			add = "|",
+			add = "+",
 			change = "|",
-			delete = "|",
+			delete = "-",
 		}
 	}
 }

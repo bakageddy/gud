@@ -16,22 +16,23 @@ order = [ "main" ]
     [bar.main]
     auto_hide = false
     background_opacity = 1.0
-    border = "outline"
+    border = "on_secondary"
     border_width = 0.0
     capsule = false
     capsule_fill = "surface_variant"
     capsule_group = []
     capsule_opacity = 1.0
     capsule_padding = 6.0
+    capsule_radius = 8.0
     capsule_thickness = 0.75999999046325684
     center = [ "clock", "cat" ]
     color = "on_surface_variant"
     contact_shadow = true
     enabled = true
-    end = [ "weather", "bluetooth", "volume", "brightness", "network", "battery", "settings", "lock_button" ]
-    font_family = "Ioskeley Mono Heavy"
+    end = [ "weather", "bluetooth", "volume", "brightness", "network", "battery", "settings" ]
+    font_family = "SF Mono"
     font_weight = 500
-    icon_color = "primary"
+    icon_color = "tertiary"
     layer = "top"
     margin_edge = 0
     margin_ends = 0
@@ -39,22 +40,22 @@ order = [ "main" ]
     panel_overlap = 1
     position = "top"
     radius = 12
-    radius_bottom_left = -32
-    radius_bottom_right = -32
-    radius_top_left = 12
-    radius_top_right = 12
+    radius_bottom_left = -48
+    radius_bottom_right = -48
+    radius_top_left = 48
+    radius_top_right = 48
     reserve_space = true
     scale = 1.0
-    shadow = true
+    shadow = false
     start = [ "launcher", "workspaces" ]
-    thickness = 34
-    widget_spacing = 16
+    thickness = 40
+    widget_spacing = 24
 
 [battery]
 warning_threshold = 20
 
 [brightness]
-enable_ddcutil = false
+enable_ddcutil = true
 ignore_mmids = []
 
 [calendar]
@@ -86,7 +87,14 @@ sidebar_section = "compact"
 [desktop_widgets]
 enabled = true
 schema_version = 2
-widget_order = [ "weather_main", "media_player_main", "clock_main" ]
+widget_order = [
+    "weather_main",
+    "clock_main",
+    "desktop-widget-0000000000000001",
+    "desktop-widget-0000000000000002",
+    "desktop-widget-0000000000000003",
+    "desktop-widget-0000000000000004"
+]
 
     [desktop_widgets.grid]
     cell_size = 24
@@ -94,42 +102,90 @@ widget_order = [ "weather_main", "media_player_main", "clock_main" ]
     visible = true
 
     [desktop_widgets.widget.clock_main]
-    box_height = 96.0
-    box_width = 176.0
-    cx = 1616.0
-    cy = 264.0
+    box_height = 120.0
+    box_width = 312.0
+    cx = 1764.0
+    cy = 72.0
     enabled = true
     output = "eDP-1"
     rotation = 0.0
     type = "clock"
 
         [desktop_widgets.widget.clock_main.settings]
+        background_opacity = 0.0
+        clock_style = "digital"
 
-    [desktop_widgets.widget.media_player_main]
-    box_height = 144.0
-    box_width = 368.0
-    cx = 1704.0
-    cy = 400.0
+    [desktop_widgets.widget.desktop-widget-0000000000000001]
+    box_height = 168.0
+    box_width = 360.0
+    cx = 2348.0
+    cy = 132.0
     enabled = true
-    output = "eDP-1"
+    output = "DP-1"
+    rotation = 0.0
+    type = "clock"
+
+        [desktop_widgets.widget.desktop-widget-0000000000000001.settings]
+        background_opacity = 0.0
+
+    [desktop_widgets.widget.desktop-widget-0000000000000002]
+    box_height = 144.0
+    box_width = 360.0
+    cx = 2324.0
+    cy = 276.0
+    enabled = true
+    output = "DP-1"
     rotation = 0.0
     type = "media_player"
 
-        [desktop_widgets.widget.media_player_main.settings]
+        [desktop_widgets.widget.desktop-widget-0000000000000002.settings]
+
+    [desktop_widgets.widget.desktop-widget-0000000000000003]
+    box_height = 264.0
+    box_width = 456.0
+    cx = 3492.0
+    cy = 192.0
+    enabled = true
+    output = "DP-2"
+    rotation = 0.0
+    type = "clock"
+
+        [desktop_widgets.widget.desktop-widget-0000000000000003.settings]
+        background_opacity = 0.0
+        font_family = "Inter ExtraBold"
+
+    [desktop_widgets.widget.desktop-widget-0000000000000004]
+    box_height = 264.0
+    box_width = 432.0
+    cx = 3504.0
+    cy = 432.0
+    enabled = true
+    output = "DP-2"
+    rotation = 0.0
+    type = "media_player"
+
+        [desktop_widgets.widget.desktop-widget-0000000000000004.settings]
+        background_opacity = 0.0
+        color = "on_surface"
+        layout = "vertical"
+        shadow = false
 
     [desktop_widgets.widget.weather_main]
-    box_height = 96.0
-    box_width = 176.0
-    cx = 1800.0
-    cy = 264.0
+    box_height = 120.0
+    box_width = 288.0
+    cx = 1776.0
+    cy = 192.0
     enabled = true
     output = "eDP-1"
     rotation = 0.0
     type = "weather"
 
         [desktop_widgets.widget.weather_main.settings]
+        background_opacity = 0.0
+        background_padding = 0.0
         color = "on_surface"
         shadow = true
+        show_forecast = false
 
 [dock]
 active_monitor_only = false
@@ -143,7 +199,7 @@ icon_size = 48
 inactive_opacity = 0.85000002384185791
 inactive_scale = 0.85000002384185791
 item_spacing = 6
-launcher_icon = "grid-dots"
+launcher_icon = "brand-finder"
 launcher_position = "end"
 magnification = true
 magnification_scale = 1.4500000476837158
@@ -151,7 +207,7 @@ main_axis_padding = 16
 margin_edge = 8
 margin_ends = 0
 monitors = []
-pinned = [ "ghostty", "kitty", "codium", "zen" ]
+pinned = [ "ghostty", "kitty", "codium", "zen", "helium" ]
 position = "bottom"
 radius = 16
 radius_bottom_left = 16
@@ -236,6 +292,8 @@ wallpaper = ""
 enabled = true
 schema_version = 2
 widget_order = [
+    "lockscreen-login-box@WL-1",
+    "lockscreen-login-box@DP-2",
     "lockscreen-login-box@DP-1",
     "lockscreen-widget-0000000000000001",
     "lockscreen-login-box@winit",
@@ -267,6 +325,24 @@ widget_order = [
         input_radius = 6.0
         show_login_button = true
 
+    [lockscreen_widgets.widget."lockscreen-login-box@DP-2"]
+    box_height = 0.0
+    box_width = 0.0
+    cx = 1920.0
+    cy = 2037.0
+    enabled = true
+    output = "DP-2"
+    rotation = 0.0
+    type = "login_box"
+
+        [lockscreen_widgets.widget."lockscreen-login-box@DP-2".settings]
+        background_color = "surface_variant"
+        background_opacity = 0.88
+        background_radius = 12.0
+        input_opacity = 1.0
+        input_radius = 6.0
+        show_login_button = true
+
     [lockscreen_widgets.widget."lockscreen-login-box@HDMI-A-1"]
     box_height = 0.0
     box_width = 0.0
@@ -278,6 +354,24 @@ widget_order = [
     type = "login_box"
 
         [lockscreen_widgets.widget."lockscreen-login-box@HDMI-A-1".settings]
+        background_color = "surface_variant"
+        background_opacity = 0.88
+        background_radius = 12.0
+        input_opacity = 1.0
+        input_radius = 6.0
+        show_login_button = true
+
+    [lockscreen_widgets.widget."lockscreen-login-box@WL-1"]
+    box_height = 0.0
+    box_width = 0.0
+    cx = 960.0
+    cy = 957.0
+    enabled = true
+    output = "WL-1"
+    rotation = 0.0
+    type = "login_box"
+
+        [lockscreen_widgets.widget."lockscreen-login-box@WL-1".settings]
         background_color = "surface_variant"
         background_opacity = 0.88
         background_radius = 12.0
@@ -357,7 +451,7 @@ temperature_night = 4000
 background_opacity = 0.97000002861022949
 collapse_on_dismiss = true
 enable_daemon = true
-layer = "top"
+layer = "overlay"
 monitors = []
 offset_x = 20
 offset_y = 8
@@ -406,6 +500,7 @@ enabled = [ "noctalia/bongocat" ]
     name = "community"
 
 [shell]
+app_icon_color = "outline"
 app_icon_colorize = false
 avatar_path = ""
 clipboard_auto_paste = "auto"
@@ -416,7 +511,7 @@ clipboard_image_action_command = ""
 corner_radius_scale = 1.0
 date_format = "%A, %x"
 disable_mipmaps = false
-font_family = "SF Mono"
+font_family = "Comfortaa"
 launch_apps_as_systemd_services = false
 middle_click_opens_widget_settings = true
 niri_overview_type_to_launch_enabled = true
@@ -441,7 +536,7 @@ ui_scale = 1.0
 
     [shell.panel]
     borders = true
-    clipboard_placement = "centered"
+    clipboard_placement = "attached"
     control_center_placement = "attached"
     launcher_categories = true
     launcher_compact = false
@@ -461,11 +556,11 @@ ui_scale = 1.0
 
     [shell.screen_corners]
     enabled = true
-    size = 48
+    size = 32
 
     [shell.screenshot]
     copy_to_clipboard = true
-    directory = ""
+    directory = "/home/dinesh-24010/Pictures/Screenshots"
     filename_pattern = ""
     freeze_screen = true
     pipe_command = ""
@@ -551,15 +646,15 @@ swap_pct_activity_threshold = 20.0
 swap_pct_critical_threshold = 80.0
 
 [theme]
-builtin = "Gruvbox"
-community_palette = "Monochrome"
-custom_palette = ""
-mode = "dark"
-source = "builtin"
-wallpaper_scheme = "dysfunctional"
+builtin = "Ayu"
+community_palette = "Ayu Blue"
+custom_palette = "monochrome"
+mode = "auto"
+source = "community"
+wallpaper_scheme = "m3-content"
 
     [theme.templates]
-    builtin_ids = []
+    builtin_ids = [ "gtk3", "gtk4" ]
     community_ids = []
     enable_builtin_templates = true
     enable_community_templates = true
@@ -603,8 +698,9 @@ type = "battery"
 
 [widget.cat]
 audio_spectrum = true
-color = "tertiary"
+color = "secondary"
 font_family = "Berkeley Mono"
+icon_color = "primary"
 scale = 1.6000000000000001
 tappy_mode = true
 type = "noctalia/bongocat:cat"

@@ -9,15 +9,16 @@ vim.pack.add({
 	"https://github.com/nvimtools/none-ls.nvim"
 })
 
-local lspconfig = require("lspconfig")
+-- local lspconfig = require("lspconfig")
 local cmp = require("blink.cmp")
-local lsp_capbl = cmp.get_lsp_capabilities()
+-- local lsp_capibilities = cmp.get_lsp_capabilities()
 local _ = require("lazydev").setup()
 local null_ls = require("null-ls")
 
 null_ls.setup({
 	sources = {
 		null_ls.builtins.formatting.prettierd,
+		null_ls.builtins.formatting.sql_formatter,
 	}
 })
 
@@ -77,6 +78,9 @@ require("mason-lspconfig").setup({
 vim.api.nvim_create_autocmd("LspAttach", {
 	callback = function(args)
 		local client = vim.lsp.get_client_by_id(args.data.client_id)
+		if client ~= nil then
+			client.server_capabilities.semanticTokensProvider = nil
+		end
 		-- if client.supports_method('textDocument/completion') then
 		-- 	vim.lsp.completion.enable(true, client.id, args.buf, { autotrigger = true })
 		-- end

@@ -13,41 +13,47 @@
 # font-family-italic = SF Mono
 # font-family-bold-italic = SF Mono
 
-# font-family = RobotoMono Nerd Font Mono
-# font-family-bold = RobotoMono Nerd Font Mono
-# font-family-italic = RobotoMono Nerd Font Mono
-# font-family-bold-italic = RobotoMono Nerd Font Mono
+# font-family = RobotoMono Nerd Font Mono Md
+# font-style-bold = false
+# font-style-bold-italic = false
+# font-style-italic = false
 
 # font-family = Ioskeley Mono
-# font-style-bold = Ioskeley Mono
-# font-style-bold-italic = Ioskeley Mono
-# font-style-italic = Ioskeley Mono
+# font-style-bold = Ioskeley Mono Bold
+# font-style-bold-italic = Ioskeley Mono Bold
+# font-style-italic = Ioskeley Mono Bold
+
+font-family = Lilex Nerd Font Mono
+font-style-bold = Lilex Nerd Font Mono
+font-style-bold-italic = Lilex Nerd Font Mono
+font-style-italic = Lilex Nerd Font Mono
 
 # font-family = CommitMono
 # font-style-bold = CommitMono Bold
 # font-style-bold-italic = CommitMono Bold Italic
 # font-style-italic = CommitMono Italic
 
-font-family = JetBrains Mono
+# font-family = JetBrains Mono
 # font-family = Fragment Mono
 font-style-bold = false
 font-style-bold-italic = false
 font-style-italic = false
 adjust-cell-height = +20%
-custom-shader-animation = true
-custom-shader = ./shaders/cursor_smear.glsl
+# custom-shader-animation = true
+# custom-shader = ./shaders/cursor_smear.glsl
 
 notify-on-command-finish = unfocused
 
-font-size=16
+font-size=14
 
 # window-decoration = server
 window-theme = ghostty
 window-padding-x = 30
 window-padding-y = 30
 # background-opacity = 0.9
-# theme = modus
-theme = mfdflir
+# theme = Kanagawa Dragon
+# theme = mfdflir
+theme = gruvbox
 selection-invert-fg-bg = true
 
 keybind = ctrl+a>n=new_window

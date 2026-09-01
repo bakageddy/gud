@@ -199,4 +199,18 @@ M.paper = {
 	red      = '#444444',
 }
 
+M.oxocarbon = {
+	bg = '#161616',
+	fg = '#f2f4f8',
+	yellow   = '#82cfff',
+	cyan     = '#3ddbd9',
+	darkblue = '#78a9ff',
+	green    = '#42be64',
+	orange   = '#ff6f00',
+	violet   = '#be95ff',
+	magenta  = '#ff7eb6',
+	blue     = '#78a9ff',
+	red      = '#ee5396',
+}
+
 return M

@@ -1,6 +1,6 @@
 # FILE: gruvbox.tmux.conf
 
-set -g status-position bottom
+set -g status-position top
 set -g status-justify centre
 set -g status-style "bg=#1d2021"
 set -g window-style ""
