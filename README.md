@@ -1,8 +1,10 @@
 # GUD
 My Grand Unified Dot-files.
 
-![Demo](./assets/output.mkv)
-![Editor](./assets/editor.mkv)
+![Demo](https://raw.githubusercontent.com/bakageddy/gud/main/assets/output.mkv)
+
+![Editor](https://raw.githubusercontent.com/bakageddy/gud/main/assets/editor.mkv)
+
 ![](./assets/nvim.png)
 ![](./assets/weather.png)
 
