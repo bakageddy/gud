@@ -224,7 +224,7 @@ layout {
     // You can enable drop shadows for windows.
     shadow {
         // Uncomment the next line to enable shadows.
-        on
+        off
 
         // By default, the shadow draws only around its window, and not behind it.
         // Uncomment this setting to make the shadow draw behind its window.
@@ -246,16 +246,16 @@ layout {
         // pixels and match the CSS box-shadow properties.
 
         // Softness controls the shadow blur radius.
-        softness 30
+        softness 0
 
         // Spread expands the shadow.
-        spread 20
+        spread 0
 
         // Offset moves the shadow relative to the window.
-        offset x=10 y=5
+        offset x=20 y=16
 
         // You can also change the shadow color and opacity.
-        color "#0007"
+        color "#1e1f1f"
     }
 
     // Struts shrink the area occupied by windows, similarly to layer-shell panels.
@@ -442,8 +442,8 @@ binds {
     Mod+Return hotkey-overlay-title="Open a Terminal: footclient" { spawn "footclient"; }
     Mod+Shift+Return hotkey-overlay-title="Open a Terminal: kitty" { spawn "kitty"; }
 	Mod+Ctrl+Return hotkey-overlay-title="Open a Terminal: ghostty" { spawn "ghostty" "+new-window"; }
-    // Mod+P hotkey-overlay-title="Run an Application" { spawn "noctalia" "msg" "panel-toggle" "launcher"; }
-    Mod+P hotkey-overlay-title="Run an Application" { spawn "fuzzel"; }
+    Mod+P hotkey-overlay-title="Run an Application" { spawn "noctalia" "msg" "panel-toggle" "launcher"; }
+    // Mod+P hotkey-overlay-title="Run an Application" { spawn "fuzzel"; }
     Mod+Shift+B hotkey-overlay-title="Run Browser: zen" { spawn "/home/dinesh-24010/.nix-profile/bin/zen"; }
 
 	Mod+Home hotkey-overlay-title="Music: prev" {spawn "playerctl" "previous";}
