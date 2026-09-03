@@ -2,6 +2,7 @@
 My Grand Unified Dot-files.
 
 ![Demo](./assets/output.mkv)
+![Editor](./assets/editor.mkv)
 ![](./assets/nvim.png)
 ![](./assets/weather.png)
 
