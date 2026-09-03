@@ -30,6 +30,9 @@
   home.packages = with pkgs; [
     (config.lib.nixGL.wrap quickshell)
 	(config.lib.nixGL.wrap kitty)
+	# performance of these programs are better when you compile them yourself
+	# (config.lib.nixGL.wrap noctalia)
+	# (config.lib.nixGL.wrap niri)
     thunar
     htop
     zen-browser.packages.x86_64-linux.default
