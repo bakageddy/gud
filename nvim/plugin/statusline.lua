@@ -1,11 +1,11 @@
-vim.pack.add({'https://github.com/nvim-lualine/lualine.nvim'})
+vim.pack.add({ 'https://github.com/nvim-lualine/lualine.nvim' })
 
 local lualine = require 'lualine'
 local themes = require 'themes'
 
 -- Color table for highlights
 -- stylua: ignore
-local colors = themes.gruvbox
+local colors = themes.gruvbox_flat
 -- local colors = themes.nord
 
 local conditions = {
@@ -71,7 +71,7 @@ ins_left {
 	function()
 		return '▊'
 	end,
-	color = { fg = colors.blue },    -- Sets highlighting of component
+	color = { fg = colors.blue },   -- Sets highlighting of component
 	padding = { left = 0, right = 1 }, -- We don't need space before this
 }
 ins_left {
@@ -126,14 +126,14 @@ ins_left { 'location' }
 -- ins_left { 'progress', color = { fg = colors.fg, gui = 'bold' } }
 
 ins_left {
-  'diagnostics',
-  sources = { 'nvim_diagnostic' },
-  symbols = { error = 'E ', warn = 'W', info = 'I' },
-  diagnostics_color = {
-    color_error = { fg = colors.red },
-    color_warn = { fg = colors.yellow },
-    color_info = { fg = colors.cyan },
-  },
+	'diagnostics',
+	sources = { 'nvim_diagnostic' },
+	symbols = { error = 'E ', warn = 'W', info = 'I' },
+	diagnostics_color = {
+		color_error = { fg = colors.red },
+		color_warn = { fg = colors.yellow },
+		color_info = { fg = colors.cyan },
+	},
 }
 
 -- Insert mid section. You can make any number of sections in neovim :)
@@ -178,9 +178,9 @@ ins_left {
 -- }
 
 ins_right {
-  'branch',
-  icon = '',
-  color = { fg = colors.green, gui = 'bold' },
+	'branch',
+	icon = '',
+	color = { fg = colors.green, gui = 'bold' },
 }
 
 ins_right {
@@ -204,10 +204,10 @@ ins_right {
 -- }
 
 ins_right {
-  'fileformat',
-  fmt = string.upper,
-  icons_enabled = false, -- I think icons are cool but Eviline doesn't have them. sigh
-  color = { fg = colors.red, gui = 'bold' },
+	'fileformat',
+	fmt = string.upper,
+	icons_enabled = false, -- I think icons are cool but Eviline doesn't have them. sigh
+	color = { fg = colors.red, gui = 'bold' },
 }
 
 ins_right {

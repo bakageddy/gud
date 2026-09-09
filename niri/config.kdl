@@ -115,7 +115,7 @@ output "DP-1" {
 }
 
 output "DP-2" {
-	scale 1.5
+	scale 1.0
 	position x=2160 y=0
 }
 
@@ -704,6 +704,7 @@ binds {
 
     // Powers off the monitors. To turn them back on, do any input like
     // moving the mouse or pressing any other key.
-    Mod+Shift+Y { power-off-monitors; }
+    // Mod+Shift+Y { power-off-monitors; }
+    Mod+Shift+Y { spawn "noctalia" "msg" "session" "lock"; }
 	Mod+E { spawn "/home/dinesh-24010/Software/scripts/lock.sh" ;}
 }

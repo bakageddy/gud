@@ -31,7 +31,7 @@
     (config.lib.nixGL.wrap quickshell)
 	(config.lib.nixGL.wrap kitty)
 	# performance of these programs are better when you compile them yourself
-	# (config.lib.nixGL.wrap noctalia)
+	(config.lib.nixGL.wrap noctalia)
 	# (config.lib.nixGL.wrap niri)
     thunar
     htop
@@ -49,6 +49,7 @@
     jetbrains-mono
 	nerd-fonts.roboto-mono
 	nerd-fonts.lilex
+	nerd-fonts.geist-mono
 
     # bruno-cli
     duckdb

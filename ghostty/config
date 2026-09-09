@@ -23,10 +23,10 @@
 # font-style-bold-italic = Ioskeley Mono Bold
 # font-style-italic = Ioskeley Mono Bold
 
-font-family = Lilex Nerd Font Mono
-font-style-bold = Lilex Nerd Font Mono
-font-style-bold-italic = Lilex Nerd Font Mono
-font-style-italic = Lilex Nerd Font Mono
+font-family = GeistMono NFM Medium
+font-style-bold = GeistMono NFM Medium
+font-style-bold-italic = GeistMono NFM Medium
+font-style-italic = GeistMono NFM Medium
 
 # font-family = CommitMono
 # font-style-bold = CommitMono Bold
