@@ -3,10 +3,10 @@
 # font-style-bold-italic = IosevkaTerm NFM Bold
 # font-style-italic = IosevkaTerm NFM Medium
 
-# font-family = Maple Mono NF SemiBold
-# font-style-bold = Maple Mono NF SemiBold
-# font-style-bold-italic = Maple Mono NF SemiBold
-# font-style-italic = Maple Mono NF SemiBold
+font-family = Maple Mono NF Medium
+font-style-bold = Maple Mono NF Medium
+font-style-bold-italic = Maple Mono NF Medium
+font-style-italic = Maple Mono NF Medium
 
 # font-family = SF Mono
 # font-family-bold = SF Mono
@@ -23,10 +23,10 @@
 # font-style-bold-italic = Ioskeley Mono Bold
 # font-style-italic = Ioskeley Mono Bold
 
-font-family = GeistMono NFM Medium
-font-style-bold = GeistMono NFM Medium
-font-style-bold-italic = GeistMono NFM Medium
-font-style-italic = GeistMono NFM Medium
+# font-family = GeistMono NFM Medium
+# font-style-bold = GeistMono NFM Medium
+# font-style-bold-italic = GeistMono NFM Medium
+# font-style-italic = GeistMono NFM Medium
 
 # font-family = CommitMono
 # font-style-bold = CommitMono Bold
@@ -51,7 +51,7 @@ window-theme = ghostty
 window-padding-x = 30
 window-padding-y = 30
 # background-opacity = 0.9
-# theme = Kanagawa Dragon
+# theme = oxocarbon
 # theme = mfdflir
 theme = gruvbox
 selection-invert-fg-bg = true

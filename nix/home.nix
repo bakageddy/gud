@@ -28,14 +28,14 @@
   };
 
   home.packages = with pkgs; [
-    (config.lib.nixGL.wrap quickshell)
-	(config.lib.nixGL.wrap kitty)
+    # (config.lib.nixGL.wrap quickshell)
 	# performance of these programs are better when you compile them yourself
 	(config.lib.nixGL.wrap noctalia)
-	# (config.lib.nixGL.wrap niri)
+	(config.lib.nixGL.wrap niri)
     thunar
     htop
-    zen-browser.packages.x86_64-linux.default
+    (config.lib.nixGL.wrap zen-browser.packages.x86_64-linux.default)
+	(config.lib.nixGL.wrap eclipse-mat)
     firefox
 
     zathura
@@ -43,13 +43,16 @@
     zathuraPkgs.zathura_djvu
 
     foot
-    ghostty
+    (config.lib.nixGL.wrap kitty)
+	(config.lib.nixGL.wrap ghostty)
+	(config.lib.nixGL.wrap mpv)
+	(config.lib.nixGL.wrap hyprland)
     helix
 
     jetbrains-mono
-	nerd-fonts.roboto-mono
 	nerd-fonts.lilex
 	nerd-fonts.geist-mono
+	ioskeley-mono.term-nf
 
     # bruno-cli
     duckdb
@@ -64,7 +67,6 @@
     pnpm
 	gradle
     nodejs
-	eclipse-mat
 	visualvm
     jdk21
     jre
