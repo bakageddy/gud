@@ -5,7 +5,7 @@ local themes = require 'themes'
 
 -- Color table for highlights
 -- stylua: ignore
-local colors = themes.gruvbox_flat
+local colors = themes.gruvbox
 -- local colors = themes.nord
 
 local conditions = {

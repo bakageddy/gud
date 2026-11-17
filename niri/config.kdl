@@ -8,7 +8,7 @@
 // https://github.com/YaLTeR/niri/wiki/Configuration:-Input
 
 environment {
-	DISPLAY ":0"
+      DISPLAY ":0"
 }
 
 overview {
@@ -98,24 +98,26 @@ output "eDP-1" {
     mode "1920x1200"
     scale 1
     transform "normal"
-    position x=0 y=0
+    position x=-1200 y=0
 }
 
 output "HDMI-A-1" {
 	mode "1920x1080@179.961"
 	scale 1
-	position x=1920 y=0
+	position x=0 y=0
 }
 
 output "DP-1" {
 	scale 1.0
 	position x=0 y=0
-	transform "90"
+	// position x=1200 y=0
+	// transform "90"
 	// position x=0 y=-2160
 }
 
 output "DP-2" {
 	scale 1.0
+
 	position x=2160 y=0
 }
 
@@ -353,6 +355,14 @@ screenshot-path "~/Pictures/Screenshots/Screenshot from %Y-%m-%d %H-%M-%S.png"
 // Find more information on the wiki:
 // https://github.com/YaLTeR/niri/wiki/Configuration:-Window-Rules
 
+// window-rule {
+// 	match app-id="zen"
+// 	background-effect {
+// 		blur true
+// 		noise 0.01
+// 	}
+// }
+
 window-rule {
     // This regular expression is intentionally made as specific as possible,
     // since this is the default config, and we want no false positives.
@@ -360,7 +370,7 @@ window-rule {
 	match app-id="foot"
 	match app-id="ghostty"
 	match app-id="kitty"
-	opacity 0.95
+	// opacity 0.92
 	background-effect {
 		// xray true
 		blur true

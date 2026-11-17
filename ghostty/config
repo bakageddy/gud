@@ -1,41 +1,25 @@
-# font-family = IosevkaTerm NFM Medium
-# font-style-bold = IosevkaTerm NFM Bold
-# font-style-bold-italic = IosevkaTerm NFM Bold
-# font-style-italic = IosevkaTerm NFM Medium
+# font-family = Ioskeley Mono Term
+# font-style-bold = Ioskeley Mono Term
+# font-style-bold-italic = Ioskeley Mono Term
+# font-style-italic = Ioskeley Mono Term
 
-font-family = Maple Mono NF Medium
-font-style-bold = Maple Mono NF Medium
-font-style-bold-italic = Maple Mono NF Medium
-font-style-italic = Maple Mono NF Medium
+# font-family = GeistMono NF SemiBold
+# font-style-bold = GeistMono NF SemiBold
+# font-style-bold-italic = GeistMono NF SemiBold
+# font-style-italic = GeistMono NF SemiBold
 
-# font-family = SF Mono
-# font-family-bold = SF Mono
-# font-family-italic = SF Mono
-# font-family-bold-italic = SF Mono
+# font-family = Paper Mono SemiBold
+# font-style-bold = Paper Mono SemiBold
+# font-style-bold-italic = Paper Mono SemiBold
+# font-style-italic = Paper Mono SemiBold
 
-# font-family = RobotoMono Nerd Font Mono Md
-# font-style-bold = false
-# font-style-bold-italic = false
-# font-style-italic = false
+# font-family = MonaspiceNe Nerd Font Mono Regular
+# font-style-bold = MonaspiceNe Nerd Font Mono Regular
+# font-style-bold-italic = MonaspiceNe Nerd Font Mono Regular
+# font-style-italic = MonaspiceNe Nerd Font Mono Regular
 
-# font-family = Ioskeley Mono
-# font-style-bold = Ioskeley Mono Bold
-# font-style-bold-italic = Ioskeley Mono Bold
-# font-style-italic = Ioskeley Mono Bold
-
-# font-family = GeistMono NFM Medium
-# font-style-bold = GeistMono NFM Medium
-# font-style-bold-italic = GeistMono NFM Medium
-# font-style-italic = GeistMono NFM Medium
-
-# font-family = CommitMono
-# font-style-bold = CommitMono Bold
-# font-style-bold-italic = CommitMono Bold Italic
-# font-style-italic = CommitMono Italic
-
-# font-family = JetBrains Mono
-# font-family = Fragment Mono
-font-style-bold = false
+font-family = JetBrains Mono Nerd Font
+font-style-bold = true
 font-style-bold-italic = false
 font-style-italic = false
 adjust-cell-height = +20%
@@ -44,7 +28,7 @@ adjust-cell-height = +20%
 
 notify-on-command-finish = unfocused
 
-font-size=14
+font-size=16
 
 # window-decoration = server
 window-theme = ghostty
@@ -54,7 +38,7 @@ window-padding-y = 30
 # theme = oxocarbon
 # theme = mfdflir
 theme = gruvbox
-selection-invert-fg-bg = true
+# selection-invert-fg-bg = true
 
 keybind = ctrl+a>n=new_window
 keybind = ctrl+a>s>h=new_split:left

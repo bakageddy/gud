@@ -1,8 +1,10 @@
 vim.pack.add({
 	'https://github.com/ellisonleao/gruvbox.nvim',
+	'https://github.com/bakageddy/classic.nvim',
 })
 
 local gruvbox = require 'gruvbox'
+local classic = require 'classic'
 gruvbox.setup {
 	terminal_colors = false,
 	invert_selection = true,
@@ -51,4 +53,7 @@ gruvbox.setup {
 	}
 }
 
+classic.setup({})
+
+-- vim.cmd.colorscheme [[classic]]
 vim.cmd.colorscheme [[gruvbox]]

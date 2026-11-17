@@ -46,13 +46,10 @@
     (config.lib.nixGL.wrap kitty)
 	(config.lib.nixGL.wrap ghostty)
 	(config.lib.nixGL.wrap mpv)
-	(config.lib.nixGL.wrap hyprland)
     helix
 
     jetbrains-mono
 	nerd-fonts.lilex
-	nerd-fonts.geist-mono
-	ioskeley-mono.term-nf
 
     # bruno-cli
     duckdb
